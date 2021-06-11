@@ -22,7 +22,11 @@ module.exports = {
 				"Noto Color Emoji",
 			],
 		},
-		extend: {},
+		extend: {
+			zIndex: {
+				"-10": "-10",
+			},
+		},
 	},
 	variants: {
 		extend: {},
