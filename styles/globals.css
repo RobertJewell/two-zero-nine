@@ -11,3 +11,11 @@ body {
 .featureGradient {
 	background: radial-gradient(100% 100% at 100% 0%, #062b2b 0%, #0a0e15 100%);
 }
+
+.middleGradient {
+	background: radial-gradient(
+		117.36% 50% at 0% 50%,
+		#1d073a 0%,
+		rgba(10, 14, 21, 0) 100%
+	);
+}
