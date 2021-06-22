@@ -23,6 +23,13 @@ module.exports = {
 			],
 		},
 		extend: {
+			colors: {
+				accent: {
+					main: "#2AEDDD",
+					muted: "#81E6D9",
+					shade: "#2C7A7B",
+				},
+			},
 			zIndex: {
 				"-10": "-10",
 			},
