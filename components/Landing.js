@@ -3,9 +3,9 @@ import Button from "./button";
 
 export default function Landing() {
 	return (
-		<div className="container flex flex-col justify-center px-6 mx-auto text-white sm:items-center sm:px-0 ">
-			<h1 className="pt-12 text-6xl font-bold text-white sm:text-center sm:text-8xl ">
-				Your sound:
+		<div className="container flex flex-col justify-center w-full mx-auto text-white h-96 sm:h-auto sm:items-center sm:px-0 ">
+			<h1 className="pt-12 text-6xl font-bold text-white sm:text-6xl sm:text-center lg:text-8xl ">
+				Your <br className="sm:hidden" /> sound:
 				<br />
 				<span className="text-accent-main">Perfected.</span>
 			</h1>
@@ -19,6 +19,7 @@ export default function Landing() {
 					width="w-36"
 					margin="sm:mx-4"
 					link="/"
+					extras=""
 				></Button>
 				<Button
 					text="Services"
@@ -26,7 +27,7 @@ export default function Landing() {
 					width="w-36"
 					margin="sm:mx-4"
 					link="/"
-					extras="hidden sm:block"
+					extras="hidden sm:flex"
 				></Button>
 			</div>
 		</div>
