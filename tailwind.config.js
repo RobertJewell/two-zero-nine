@@ -29,6 +29,7 @@ module.exports = {
 					muted: "#81E6D9",
 					shade: "#2C7A7B",
 				},
+				dark: "#0a0e15",
 			},
 			// screens: {
 			// 	xsm: "360px",
