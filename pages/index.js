@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Vinyl from "../public/assets/images/vinyl.svg";
+import Vinyl from "../public/assets/images/Vinyl.svg";
 import NavBar from "../components/NavBar";
 import Landing from "../components/Landing";
 import BrandLogos from "../components/BrandLogos";
