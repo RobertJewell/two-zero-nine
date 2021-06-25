@@ -3,6 +3,7 @@ import Vinyl from "../public/assets/images/vinyl.svg";
 import NavBar from "../components/NavBar";
 import Landing from "../components/Landing";
 import BrandLogos from "../components/BrandLogos";
+import MobileDropdown from "../components/MobileDropdown";
 
 export default function Home() {
 	return (
