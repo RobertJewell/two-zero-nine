@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import TwoZeroNineLogo from "../public/assets/images/TwoZeroNineLogo.svg";
 import Button from "./button";
+import MobileDropdown from "./MobileDropdown";
 
 const NavBar = () => {
 	return (
@@ -12,11 +13,7 @@ const NavBar = () => {
 						<TwoZeroNineLogo></TwoZeroNineLogo>
 					</a>
 				</Link>
-				<div className="absolute block p-4 bg-white rounded-full bg-opacity-20 top-3 right-4 sm:hidden">
-					<div className="w-6 h-1 mb-1.5 bg-accent-muted rounded-full "></div>
-					<div className="w-6 h-1 mb-1.5 bg-accent-muted rounded-full "></div>
-					<div className="w-6 h-1 rounded-full bg-accent-muted "></div>
-				</div>
+				<MobileDropdown></MobileDropdown>
 			</div>
 
 			<div className="container hidden mx-auto text-white sm:relative sm:block">
