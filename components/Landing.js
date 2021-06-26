@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function Landing() {
 	return (
-		<div className="container flex flex-col justify-center w-full mx-auto text-white h-96 sm:h-auto sm:items-center sm:px-0 ">
+		<div className="container flex flex-col justify-center w-full mx-auto text-white min-h-96 h-screen-60 sm:h-auto sm:items-center sm:px-0 ">
 			<h1 className="pt-12 text-6xl font-bold text-white sm:text-6xl sm:text-center lg:text-8xl ">
 				Your <br className="sm:hidden" /> sound:
 				<br />
