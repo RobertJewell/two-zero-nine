@@ -54,6 +54,12 @@ module.exports = {
 				700: "700px",
 				800: "800px",
 			},
+			height: {
+				"screen-50": "50vh",
+				"screen-60": "60vh",
+				"screen-70": "70vh",
+				"screen-80": "80vh",
+			},
 		},
 	},
 	variants: {
