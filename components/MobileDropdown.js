@@ -44,7 +44,7 @@ const slideInLeft = {
 
 export default function MyDropdown() {
 	return (
-		<Menu>
+		<Menu className="outline-none">
 			{({ open }) => (
 				<>
 					<Menu.Button className="relative z-10 text-right text-white outline-none">
