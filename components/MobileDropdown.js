@@ -48,7 +48,7 @@ export default function MyDropdown() {
 			{({ open }) => (
 				<>
 					<Menu.Button className="relative z-10 text-right text-white outline-none">
-						<MobileDropdownButton open={open}></MobileDropdownButton>
+						<MobileDropdownButton className="outline-none" open={open}></MobileDropdownButton>
 					</Menu.Button>
 					<AnimatePresence>
 						{open && (
