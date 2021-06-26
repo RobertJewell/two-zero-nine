@@ -15,7 +15,7 @@ const bottom = {
 
 export default function MobileDropdownButton({ open }) {
 	return (
-		<div className="block p-4 bg-white rounded-full outline-none bg-opacity-20 sm:hidden">
+		<div className="block p-4 bg-white rounded-full outline-none focus:outline-none bg-opacity-20 sm:hidden">
 			<motion.div
 				animate={open ? "open" : "closed"}
 				variants={top}

@@ -47,13 +47,13 @@ export default function MyDropdown() {
 		<Menu className="outline-none">
 			{({ open }) => (
 				<>
-					<Menu.Button className="relative z-10 text-right text-white outline-none">
+					<Menu.Button className="relative z-10 text-right text-white">
 						<MobileDropdownButton open={open}></MobileDropdownButton>
 					</Menu.Button>
 					<AnimatePresence>
 						{open && (
 							<motion.div
-								className="absolute top-0 left-0 flex items-center justify-end w-full h-screen bg-dark bg-opacity-40 backdrop-filter backdrop-blur-lg"
+								className="absolute top-0 left-0 flex items-start justify-end w-full h-screen bg-dark bg-opacity-40 backdrop-filter backdrop-blur-lg"
 								variants={fadeIn}
 								initial="hidden"
 								animate="visible"
@@ -66,7 +66,7 @@ export default function MyDropdown() {
 									animate="visible"
 									exit="exit"
 									static
-									className="top-0 flex flex-col items-end justify-center w-1/2 text-xl text-white rounded-lg outline-none -right-0"
+									className="flex flex-col items-end justify-center w-1/2 mt-20 text-xl text-white rounded-lg outline-none -right-0"
 								>
 									<Menu.Item
 										as={motion.div}
