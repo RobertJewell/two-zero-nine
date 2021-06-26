@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import TwoZeroNineLogo from "../public/assets/images/TwoZeroNineLogo.svg";
-import Button from "./button";
+import Button from "./Button";
 import MobileDropdown from "./MobileDropdown";
 
 const NavBar = () => {
