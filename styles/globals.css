@@ -13,6 +13,10 @@ body {
         outline: none;
 }
 
+*:focus {
+    outline: none;
+}
+
 .featureGradient {
 	background: radial-gradient(100% 100% at 100% 0%, #062b2b 0%, #0a0e15 100%);
 }
