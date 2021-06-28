@@ -3,10 +3,11 @@ import Vinyl from "../public/assets/images/Vinyl.svg";
 import NavBar from "../components/NavBar";
 import Landing from "../components/Landing";
 import BrandLogos from "../components/BrandLogos";
+import AboutSection from "../components/AboutSection";
 
 export default function Home() {
 	return (
-		<div className="relative overflow-hidden">
+		<div className="relative overflow-x-hidden">
 			{/* Decoration */}
 			{/* Top Gradient */}
 			<div className="relative">
@@ -22,6 +23,7 @@ export default function Home() {
 				<NavBar></NavBar>
 				<Landing></Landing>
 				<BrandLogos></BrandLogos>
+				<AboutSection></AboutSection>
 			</div>
 		</div>
 	);
