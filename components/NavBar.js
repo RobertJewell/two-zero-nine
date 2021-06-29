@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import TwoZeroNineLogo from "../public/assets/images/TwoZeroNineLogo.svg";
 import Button from "./Button";
@@ -6,7 +5,7 @@ import MobileDropdown from "./MobileDropdown";
 
 const NavBar = () => {
 	return (
-		<div className="">
+		<div className="container px-4 mx-auto">
 			<div className="flex flex-row items-center justify-between h-20 mx-auto sm:hidden">
 				<Link href="/">
 					<a className="w-24 pr-4 text-center">

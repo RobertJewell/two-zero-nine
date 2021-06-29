@@ -1,9 +1,8 @@
-import React from "react";
 import Button from "./Button";
 
 export default function Landing() {
 	return (
-		<div className="container flex flex-col justify-center w-full mx-auto text-white min-h-96 h-screen-60 sm:min-h-400 sm:h-screen-60 max-h-700 sm:items-center sm:px-0 ">
+		<div className="container flex flex-col justify-center w-full px-4 mx-auto text-white min-h-96 h-screen-60 sm:min-h-400 sm:h-screen-60 max-h-700 sm:items-center sm:px-0 ">
 			<h1 className="pt-12 text-6xl font-bold text-white sm:text-center sm:text-8xl ">
 				Your <br className="sm:hidden" /> sound:
 				<br />

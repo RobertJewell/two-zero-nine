@@ -1,4 +1,3 @@
-import React from "react";
 import Neve from "../public/assets/images/logos/Neve.svg";
 import Showcase from "../public/assets/images/logos/Showcase.svg";
 import Sky from "../public/assets/images/logos/Sky.svg";
