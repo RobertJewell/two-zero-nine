@@ -6,7 +6,7 @@ export default function Landing() {
 			<h1 className="pt-12 text-6xl font-bold text-white sm:text-center sm:text-8xl ">
 				Your <br className="sm:hidden" /> sound:
 				<br />
-				<span className="text-accent-main">Perfected.</span>
+				<span className="text-accent-main">Perfected</span>
 			</h1>
 			<h3 className="pt-4 sm:text-center">
 				Audio mastering in the heart of Liverpool.
