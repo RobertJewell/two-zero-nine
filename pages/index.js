@@ -6,6 +6,7 @@ import Landing from "../components/Landing";
 import BrandLogos from "../components/BrandLogos";
 import AboutSection from "../components/AboutSection";
 import ThreeStepPlan from "../components/ThreeStepPlan";
+import Testamonial from "../components/Testamonial";
 
 export default function Home() {
 	return (
@@ -30,6 +31,9 @@ export default function Home() {
 				<Vinyl className="absolute hidden w-full transform scale-75 rotate-90 opacity-50 translate-x-2/4 -z-10 sm:block stroke-8"></Vinyl>
 
 				<ThreeStepPlan></ThreeStepPlan>
+
+				<Testamonial></Testamonial>
+
 				<Footer></Footer>
 			</div>
 		</div>
