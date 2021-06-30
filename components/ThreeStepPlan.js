@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function ThreeStepPlan() {
 	return (
-		<div className="container flex flex-col items-start w-full px-4 mx-auto mt-16 text-white sm:items-center">
+		<div className="container flex flex-col items-start w-full px-4 mx-auto mt-20 text-white sm:items-center">
 			<h1 className="text-5xl font-bold sm:text-6xl">How it works</h1>
 			<p className="max-w-xl mt-6 text-sm leading-6 sm:text-center">
 				We work with musicians & engineers all over the world, so even if you’re
