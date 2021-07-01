@@ -8,9 +8,10 @@ export default function AboutSection() {
 		<div className="container relative flex flex-col justify-center w-full px-4 mx-auto mt-32 lg:max-w-3xl text-dark">
 			<div className="z-10 sm:absolute md:max-w-sm sm:max-w-xs">
 				<div className="relative bg-white border-4 border-white bottom-8 rounded-2xl">
-					<div className="block w-full rounded-t-2xl sm:hidden">
+					<div className="relative block overflow-hidden rounded-t-xl sm:hidden">
+						<div className="absolute w-full h-full bg-dark bottom-2"></div>
 						<Image
-							className="block rounded-t-xl sm:hidden "
+							className="block rounded-t-xl sm:hidden"
 							src={profilePicture}
 							alt="Photo of Graeme at his desk"
 							placeholder="blur"
