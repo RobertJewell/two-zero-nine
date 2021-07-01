@@ -78,7 +78,7 @@ export default function MyDropdown() {
 												<a
 													className={`${
 														active && "text-accent-main"
-													} w-full p-8 text-right transition-colors hover:text-accent-main`}
+													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
 												>
 													Services
 												</a>
@@ -95,7 +95,7 @@ export default function MyDropdown() {
 												<a
 													className={`${
 														active && "text-accent-main"
-													} w-full p-8 text-right transition-colors hover:text-accent-main`}
+													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
 												>
 													About
 												</a>
@@ -112,7 +112,7 @@ export default function MyDropdown() {
 												<a
 													className={`${
 														active && "text-accent-main"
-													} w-full p-8 text-right transition-colors hover:text-accent-main`}
+													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
 												>
 													Portfolio
 												</a>
@@ -129,9 +129,43 @@ export default function MyDropdown() {
 												<a
 													className={`${
 														active && "text-accent-main"
-													} w-full p-8 text-right transition-colors hover:text-accent-main`}
+													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
 												>
 													FAQ
+												</a>
+											</Link>
+										)}
+									</Menu.Item>
+									<Menu.Item
+										as={motion.div}
+										className="flex w-full"
+										variants={slideInLeft}
+									>
+										{({ active }) => (
+											<Link href="/">
+												<a
+													className={`${
+														active && "text-accent-main"
+													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
+												>
+													Blog
+												</a>
+											</Link>
+										)}
+									</Menu.Item>
+									<Menu.Item
+										as={motion.div}
+										className="flex w-full"
+										variants={slideInLeft}
+									>
+										{({ active }) => (
+											<Link href="/">
+												<a
+													className={`${
+														active && "text-accent-main"
+													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
+												>
+													Contact
 												</a>
 											</Link>
 										)}
