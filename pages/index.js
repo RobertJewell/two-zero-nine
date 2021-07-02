@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Vinyl from "../public/assets/images/Vinyl.svg";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Landing from "../components/Landing";
@@ -7,28 +6,52 @@ import BrandLogos from "../components/BrandLogos";
 import AboutSection from "../components/AboutSection";
 import ThreeStepPlan from "../components/ThreeStepPlan";
 import Testamonial from "../components/Testamonial";
+import Vinyl from "../components/decoration/Vinyl";
+import GradientBG from "../components/decoration/GradientBG";
 
 export default function Home() {
 	return (
 		<div className="overflow-hidden">
 			<div className="relative">
-				{/* Top Gradient */}
-				<div className="absolute w-full featureGradient h-96 -z-10 sm:hidden"></div>
-				{/* Top Vinyl */}
-				<Vinyl className="absolute transform scale-150 rotate-90 w-600 md:w-800 translate-x-2/4 sm:-rotate-90 sm:-translate-x-2/4 -z-10 sm:-translate-y-2/4 stroke-8"></Vinyl>
+				<Vinyl
+					width="w-600 md:w-800"
+					scale="scale-150"
+					rotation="rotate-90 sm:-rotate-90"
+					translationX="translate-x-2/4  sm:-translate-x-2/4  "
+					translationY="sm:-translate-y-2/4"
+				></Vinyl>
 
 				<NavBar></NavBar>
 
 				<Landing></Landing>
 
-				<div className="absolute w-full transform flip-x -z-10 middleGradient--green h-800 opacity-60"></div>
+				<GradientBG
+					color="green"
+					height="h-800"
+					flipped={true}
+					opacity="opacity-60"
+					translateY="-translate-y-40"
+				></GradientBG>
 
 				<BrandLogos></BrandLogos>
 
 				<AboutSection></AboutSection>
 
-				<div className="absolute w-full transform -translate-y-60 -z-10 middleGradient--purple h-800 opacity-60"></div>
-				<Vinyl className="absolute hidden w-full transform scale-75 rotate-90 opacity-50 translate-x-2/4 -z-10 sm:block stroke-8"></Vinyl>
+				<GradientBG
+					color="purple"
+					height="h-800"
+					flipped={false}
+					opacity="opacity-60"
+					translateY="-translate-y-60"
+				></GradientBG>
+
+				<Vinyl
+					width="w-800"
+					scale="sm:scale-100 md:scale-125"
+					rotation="rotate-90"
+					translationX="translate-x-2/4 right-0"
+					other="hidden sm:block opacity-50 "
+				></Vinyl>
 
 				<ThreeStepPlan></ThreeStepPlan>
 
