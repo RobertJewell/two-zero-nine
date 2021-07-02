@@ -1,43 +1,15 @@
-<svg viewBox="0 0 1080 1080" fill="none"
+<svg viewBox="0 0 1080 1080" fill="none" stroke="url(#paint0_linear)"
     xmlns="http://www.w3.org/2000/svg">
-    <circle cx="540" cy="540" r="221" stroke="url(#paint0_linear)" stroke-width="8"/>
-    <circle cx="540" cy="540" r="266" stroke="url(#paint1_linear)" stroke-width="8"/>
-    <circle cx="540" cy="540" r="311" stroke="url(#paint2_linear)" stroke-width="8"/>
-    <circle cx="540" cy="540" r="356" stroke="url(#paint3_linear)" stroke-width="8"/>
-    <circle cx="540" cy="540" r="401" stroke="url(#paint4_linear)" stroke-width="8"/>
-    <circle cx="540" cy="540" r="446" stroke="url(#paint5_linear)" stroke-width="8"/>
-    <circle cx="540" cy="540" r="491" stroke="url(#paint6_linear)" stroke-width="8"/>
-    <circle cx="540" cy="540" r="536" stroke="url(#paint7_linear)" stroke-width="8"/>
+    <circle cx="540" cy="540" r="221" stroke-width="8"/>
+    <circle cx="540" cy="540" r="266" stroke-width="8"/>
+    <circle cx="540" cy="540" r="311" stroke-width="8"/>
+    <circle cx="540" cy="540" r="356" stroke-width="8"/>
+    <circle cx="540" cy="540" r="401" stroke-width="8"/>
+    <circle cx="540" cy="540" r="446" stroke-width="8"/>
+    <circle cx="540" cy="540" r="491" stroke-width="8"/>
+    <circle cx="540" cy="540" r="536" stroke-width="8"/>
     <defs>
-        <linearGradient id="paint0_linear" x1="540" y1="315" x2="540" y2="765" gradientUnits="userSpaceOnUse">
-            <stop stop-color="white" stop-opacity="0.6"/>
-            <stop offset="1" stop-color="white" stop-opacity="0"/>
-        </linearGradient>
-        <linearGradient id="paint1_linear" x1="540" y1="270" x2="540" y2="810" gradientUnits="userSpaceOnUse">
-            <stop stop-color="white" stop-opacity="0.6"/>
-            <stop offset="1" stop-color="white" stop-opacity="0"/>
-        </linearGradient>
-        <linearGradient id="paint2_linear" x1="540" y1="225" x2="540" y2="855" gradientUnits="userSpaceOnUse">
-            <stop stop-color="white" stop-opacity="0.6"/>
-            <stop offset="1" stop-color="white" stop-opacity="0"/>
-        </linearGradient>
-        <linearGradient id="paint3_linear" x1="540" y1="180" x2="540" y2="900" gradientUnits="userSpaceOnUse">
-            <stop stop-color="white" stop-opacity="0.6"/>
-            <stop offset="1" stop-color="white" stop-opacity="0"/>
-        </linearGradient>
-        <linearGradient id="paint4_linear" x1="540" y1="135" x2="540" y2="945" gradientUnits="userSpaceOnUse">
-            <stop stop-color="white" stop-opacity="0.6"/>
-            <stop offset="1" stop-color="white" stop-opacity="0"/>
-        </linearGradient>
-        <linearGradient id="paint5_linear" x1="540" y1="90" x2="540" y2="990" gradientUnits="userSpaceOnUse">
-            <stop stop-color="white" stop-opacity="0.6"/>
-            <stop offset="1" stop-color="white" stop-opacity="0"/>
-        </linearGradient>
-        <linearGradient id="paint6_linear" x1="540" y1="45" x2="540" y2="1035" gradientUnits="userSpaceOnUse">
-            <stop stop-color="white" stop-opacity="0.6"/>
-            <stop offset="1" stop-color="white" stop-opacity="0"/>
-        </linearGradient>
-        <linearGradient id="paint7_linear" x1="540" y1="0" x2="540" y2="1080" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint0_linear" x1="540" y1="0" x2="540" y2="1080" gradientUnits="userSpaceOnUse">
             <stop stop-color="white" stop-opacity="0.6"/>
             <stop offset="1" stop-color="white" stop-opacity="0"/>
         </linearGradient>
