@@ -1,13 +1,13 @@
-<svg viewBox="0 0 1080 1080" fill="none" stroke="url(#paint0_linear)"
+<svg viewBox="0 0 1080 1080" fill="none" stroke="url(#paint0_linear)" stroke-width="8"
     xmlns="http://www.w3.org/2000/svg">
-    <circle cx="540" cy="540" r="221" stroke-width="8"/>
-    <circle cx="540" cy="540" r="266" stroke-width="8"/>
-    <circle cx="540" cy="540" r="311" stroke-width="8"/>
-    <circle cx="540" cy="540" r="356" stroke-width="8"/>
-    <circle cx="540" cy="540" r="401" stroke-width="8"/>
-    <circle cx="540" cy="540" r="446" stroke-width="8"/>
-    <circle cx="540" cy="540" r="491" stroke-width="8"/>
-    <circle cx="540" cy="540" r="536" stroke-width="8"/>
+    <circle cx="540" cy="540" r="221" />
+    <circle cx="540" cy="540" r="266" />
+    <circle cx="540" cy="540" r="311" />
+    <circle cx="540" cy="540" r="356" />
+    <circle cx="540" cy="540" r="401" />
+    <circle cx="540" cy="540" r="446" />
+    <circle cx="540" cy="540" r="491" />
+    <circle cx="540" cy="540" r="536" />
     <defs>
         <linearGradient id="paint0_linear" x1="540" y1="0" x2="540" y2="1080" gradientUnits="userSpaceOnUse">
             <stop stop-color="white" stop-opacity="0.6"/>
