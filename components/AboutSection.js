@@ -19,7 +19,7 @@ export default function AboutSection() {
 					</div>
 					<div className="px-8 py-10">
 						<h1 className="text-3xl font-bold text-gray-800">TwoZeroNine</h1>
-						<p className="mt-4 text-sm leading-6 text-gray-700">
+						<p className="mt-4 leading-6 text-gray-700">
 							Two Zero Nine Mastering is a dedicated mastering studio based in
 							Liverpool’s Baltic Triangle along side leading digital labels &
 							distributors, recording studio’s & other multi-media creators, run
@@ -32,7 +32,7 @@ export default function AboutSection() {
 							width="w-28"
 							margin="mt-8"
 							link="/"
-							extras=" text-sm"
+							extras=" "
 						></Button>
 					</div>
 				</div>

@@ -11,7 +11,7 @@ export default function Footer() {
 			<div className="flex flex-col justify-between sm:flex-row">
 				<div className="flex flex-col text-center sm:text-left">
 					<h3 className="mt-4 text-2xl font-bold ">Your sound: Perfected</h3>
-					<address className="mt-6 text-sm leading-8 text-gray-400 sm:mt-8">
+					<address className="mt-6 leading-8 text-gray-400 sm:mt-8">
 						{" "}
 						<span className="font-bold">Two Zero Nine Mastering</span>
 						<br />

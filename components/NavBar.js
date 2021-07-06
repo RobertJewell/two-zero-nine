@@ -16,7 +16,7 @@ const NavBar = () => {
 			</div>
 
 			<div className="container hidden mx-auto text-white sm:relative sm:block">
-				<div className="flex flex-row items-center justify-between h-20 mx-auto text-sm ">
+				<div className="flex flex-row items-center justify-between h-20 mx-auto ">
 					<Link href="/">
 						<a className="w-24 p-4 text-center">
 							<TwoZeroNineLogo></TwoZeroNineLogo>
@@ -24,7 +24,7 @@ const NavBar = () => {
 					</Link>
 					<ul className="flex flex-row items-center justify-around w-1/2">
 						<li className="flex">
-							<Link href="/">
+							<Link href="/services">
 								<a className="w-24 p-2 text-center transition-colors hover:text-accent-main">
 									Services
 								</a>
