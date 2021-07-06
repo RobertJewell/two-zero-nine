@@ -20,7 +20,7 @@ export default function AppleDigitalMasters() {
 					</div>
 				</div>
 				<div className="flex flex-col items-center md:w-1/2 md:items-start">
-					<p className="mt-12 text-center md:mt-0 md:text-left">
+					<p className="mt-12 text-center text-gray-800 md:mt-0 md:text-left">
 						Digital distribution is no longer an afterthought. It is today’s
 						dominant medium for consuming music and as such needs to be treated
 						with utmost care and attention. We are an official Apple certified
@@ -37,7 +37,7 @@ export default function AppleDigitalMasters() {
 						text="Learn more"
 						type="secondaryDark"
 						width="w-28"
-						margin="mt-8 mx-auto md:mx-1"
+						margin="mt-8 mx-auto md:mx-0"
 						link="/"
 						extras=""
 					></Button>
