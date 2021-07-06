@@ -35,3 +35,7 @@ button:focus {
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 }
+
+.image-overflow div {
+	overflow: visible !important;
+}
