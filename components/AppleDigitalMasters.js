@@ -5,7 +5,10 @@ import AppleAlbumArt from "../public/assets/images/album-art-apple.png";
 export default function AppleDigitalMasters() {
 	return (
 		<div className="container flex flex-col items-start w-full pt-20 mx-auto sm:px-4">
-			<div className="relative flex flex-col w-full max-w-4xl px-8 py-16 mx-auto overflow-hidden bg-white md:flex-row text-dark sm:px-12 sm:rounded-xl">
+			<div
+				id="apple_digital-masters"
+				className="relative flex flex-col w-full max-w-4xl px-8 py-16 mx-auto overflow-hidden bg-white md:flex-row text-dark sm:px-12 sm:rounded-xl"
+			>
 				<div className="md:w-1/2">
 					<h2 className="text-3xl font-bold text-center md:text-left">
 						Apple Digital <br />
