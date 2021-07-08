@@ -52,6 +52,11 @@ export default function AboutSection() {
 					{/* Apple digital masters button */}
 					<div className="absolute hidden sm:block -bottom-8 md:-left-28 right-12">
 						<Button
+							type="image"
+							width="w-36"
+							margin="mt-8"
+							link="/services"
+							extras="p-0"
 							text={
 								<Image
 									src={appleDigitalMasters}
@@ -61,11 +66,6 @@ export default function AboutSection() {
 									placeholder="blur"
 								></Image>
 							}
-							type="image"
-							width="w-36"
-							margin="mt-8"
-							link="/"
-							extras="p-0"
 						></Button>
 					</div>
 				</div>
