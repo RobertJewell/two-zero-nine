@@ -29,7 +29,7 @@ export default function Home() {
 					color="green"
 					height="h-800"
 					flipped={true}
-					opacity="opacity-60"
+					opacity="opacity-80"
 					translateY="-translate-y-40"
 				></GradientBG>
 
