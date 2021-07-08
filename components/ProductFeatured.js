@@ -14,12 +14,21 @@ export default function ProductFeatured({ title, description }) {
 				<div className="sm:w-1/2">
 					<h2 className="w-1/2 text-4xl font-bold sm:text-5xl">{title}</h2>
 					<p className="w-3/4 mt-6 leading-6">{description}</p>
+				</div>
+				<div className="flex flex-col sm:flex-row">
 					<Button
 						text="Get started"
 						type="primary"
-						width="w-36"
+						width="w-40"
 						link="/"
 						margin="mt-8"
+					></Button>
+					<Button
+						text="Apple mastering"
+						type="secondary"
+						width="w-40"
+						link="#apple_digital-masters"
+						margin="mt-4 sm:ml-8 sm:mt-8"
 					></Button>
 				</div>
 			</div>
