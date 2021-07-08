@@ -70,7 +70,24 @@ export default function MyDropdown() {
 								>
 									<Menu.Item
 										as={motion.div}
-										className="flex w-full"
+										className="flex w-full outline-none"
+										variants={slideInLeft}
+									>
+										{({ active }) => (
+											<Link href="/">
+												<a
+													className={`${
+														active && "text-accent-main"
+													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
+												>
+													Home
+												</a>
+											</Link>
+										)}
+									</Menu.Item>
+									<Menu.Item
+										as={motion.div}
+										className="flex w-full outline-none"
 										variants={slideInLeft}
 									>
 										{({ active }) => (
@@ -87,7 +104,7 @@ export default function MyDropdown() {
 									</Menu.Item>
 									<Menu.Item
 										as={motion.div}
-										className="flex w-full"
+										className="flex w-full outline-none"
 										variants={slideInLeft}
 									>
 										{({ active }) => (
@@ -104,7 +121,7 @@ export default function MyDropdown() {
 									</Menu.Item>
 									<Menu.Item
 										as={motion.div}
-										className="flex w-full"
+										className="flex w-full outline-none"
 										variants={slideInLeft}
 									>
 										{({ active }) => (
@@ -121,7 +138,7 @@ export default function MyDropdown() {
 									</Menu.Item>
 									<Menu.Item
 										as={motion.div}
-										className="flex w-full"
+										className="flex w-full outline-none"
 										variants={slideInLeft}
 									>
 										{({ active }) => (
@@ -138,7 +155,7 @@ export default function MyDropdown() {
 									</Menu.Item>
 									<Menu.Item
 										as={motion.div}
-										className="flex w-full"
+										className="flex w-full outline-none"
 										variants={slideInLeft}
 									>
 										{({ active }) => (
@@ -155,7 +172,7 @@ export default function MyDropdown() {
 									</Menu.Item>
 									<Menu.Item
 										as={motion.div}
-										className="flex w-full"
+										className="flex w-full outline-none"
 										variants={slideInLeft}
 									>
 										{({ active }) => (
