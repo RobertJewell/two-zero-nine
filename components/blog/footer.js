@@ -1,30 +1,53 @@
-import Container from "./container";
-import { EXAMPLE_PATH } from "../../lib/constants";
+import Link from "next/link";
+import Button from "../Button";
+import FacebookLogo from "../../public/assets/images/social-icons/facebook.svg";
+import InstagramLogo from "../../public/assets/images/social-icons/instagram.svg";
+import TwitterLogo from "../../public/assets/images/social-icons/twitter.svg";
 
 export default function Footer() {
 	return (
-		<footer className="text-white bg-dark">
-			<Container>
-				<div className="flex flex-col items-center py-8 lg:flex-row">
-					{/* <h3 className="mb-10 text-4xl font-bold leading-tight tracking-tighter text-center lg:text-5xl lg:text-left lg:mb-0 lg:pr-4 lg:w-1/2">
-						Get your music mastered by Graeme.
-					</h3> */}
-					<div className="flex flex-col items-center justify-center w-full lg:flex-row lg:justify-between">
-						<a
-							href="https://twitter.com/Twozeronineuk"
-							className="mx-3 mb-6 font-bold lg:mb-0 hover:underline"
-						>
-							Follow me on twitter
-						</a>
-						<a
-							href="https://twozeronine.co.uk"
-							className="px-12 py-3 font-bold text-center text-white transition-colors duration-200 border-2 rounded-sm border-accent-1 hover:bg-gray-800 "
-						>
-							Get your music mastered by Graeme.
-						</a>
+		<div className="container px-8 pb-12 mx-auto mt-20 text-white sm:pb-8 ">
+			<div className="w-full h-1 mb-4 bg-gray-600 rounded-full"></div>
+			<div className="flex flex-col justify-between sm:flex-row">
+				<div className="flex flex-col text-center sm:text-left">
+					<h3 className="mt-4 text-2xl font-bold ">Your sound: Perfected</h3>
+					<address className="mt-6 leading-8 text-gray-400 sm:mt-8">
+						{" "}
+						<span className="font-bold">Two Zero Nine Mastering</span>
+						<br />
+						25-31 Parliament St,
+						<br />
+						Liverpool - L8 5RN
+					</address>
+				</div>
+				<div className="flex flex-col-reverse items-center sm:justify-between sm:flex-col">
+					<Button
+						text="Get started"
+						type="secondary"
+						width="w-36"
+						link="/"
+						margin="sm:mt-4 mt-8"
+						extras="sm:self-end"
+					></Button>
+					<div className="flex mt-8 mb-2">
+						<Link href="https://twitter.com/Twozeronineuk">
+							<a>
+								<TwitterLogo className="h-8 mx-3 text-white transition-colors fill-current sm:ml-6 sm:mr-0 hover:text-accent-muted"></TwitterLogo>
+							</a>
+						</Link>
+						<Link href="https://www.facebook.com/twozeroninemastering/">
+							<a>
+								<FacebookLogo className="h-8 mx-3 text-white transition-colors fill-current sm:ml-6 sm:mr-0 hover:text-accent-muted"></FacebookLogo>
+							</a>
+						</Link>
+						<Link href="https://www.instagram.com/twozeroninemastering/">
+							<a>
+								<InstagramLogo className="h-8 mx-3 text-white transition-colors fill-current sm:ml-6 sm:mr-0 hover:text-accent-muted"></InstagramLogo>
+							</a>
+						</Link>
 					</div>
 				</div>
-			</Container>
-		</footer>
+			</div>
+		</div>
 	);
 }
