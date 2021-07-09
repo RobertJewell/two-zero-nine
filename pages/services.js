@@ -24,7 +24,10 @@ export default function services() {
 					translateY="-translate-y-2/4 top-0"
 				></GradientBG>
 
-				<PageTitle title="What we do:" classes="max-w-4xl"></PageTitle>
+				<PageTitle
+					title="What we do:"
+					classes="max-w-4xl px-8 lg:px-4"
+				></PageTitle>
 
 				<ProductFeatured
 					title="Stereo Mastering"
