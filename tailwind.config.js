@@ -79,6 +79,7 @@ module.exports = {
 				"screen-60": "60vh",
 				"screen-70": "70vh",
 				"screen-80": "80vh",
+				"16/9": "56.25%",
 			},
 			minHeight: {
 				200: "200px",
@@ -105,6 +106,9 @@ module.exports = {
 				"screen-60": "60vh",
 				"screen-70": "70vh",
 				"screen-80": "80vh",
+			},
+			padding: {
+				"16/9": "56.25%",
 			},
 		},
 	},
