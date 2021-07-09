@@ -31,7 +31,7 @@ const NavBar = () => {
 							</Link>
 						</li>
 						<li className="flex">
-							<Link href="/">
+							<Link href="/about">
 								<a className="w-24 p-2 text-center transition-colors hover:text-accent-main">
 									About
 								</a>
