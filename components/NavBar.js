@@ -8,7 +8,7 @@ const NavBar = () => {
 		<div className="container px-4 mx-auto">
 			<div className="flex flex-row items-center justify-between h-20 mx-auto sm:hidden">
 				<Link href="/">
-					<a className="w-24 pr-4 text-center">
+					<a className="w-24 pr-8 text-center">
 						<TwoZeroNineLogo></TwoZeroNineLogo>
 					</a>
 				</Link>
@@ -18,7 +18,7 @@ const NavBar = () => {
 			<div className="container hidden mx-auto text-white sm:relative sm:block">
 				<div className="flex flex-row items-center justify-between h-20 mx-auto ">
 					<Link href="/">
-						<a className="w-24 p-4 text-center">
+						<a className="w-24 pr-8 text-center">
 							<TwoZeroNineLogo></TwoZeroNineLogo>
 						</a>
 					</Link>

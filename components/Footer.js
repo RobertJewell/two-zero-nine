@@ -6,7 +6,7 @@ import TwitterLogo from "../public/assets/images/social-icons/twitter.svg";
 
 export default function Footer() {
 	return (
-		<div className="container px-8 pb-12 mx-auto mt-20 text-white sm:pb-8 ">
+		<div className="container px-4 pb-12 mx-auto mt-20 text-white sm:pb-8 ">
 			<div className="w-full h-1 mb-4 bg-gray-600 rounded-full"></div>
 			<div className="flex flex-col justify-between sm:flex-row">
 				<div className="flex flex-col text-center sm:text-left">

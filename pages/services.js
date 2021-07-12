@@ -26,7 +26,7 @@ export default function services() {
 
 				<PageTitle
 					title="What we do:"
-					classes="max-w-4xl px-8 lg:px-4"
+					classes="max-w-4xl px-4 lg:px-0"
 				></PageTitle>
 
 				<ProductFeatured
