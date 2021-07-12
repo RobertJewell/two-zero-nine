@@ -1,18 +1,25 @@
 import Link from "next/link";
+import TwoZeroNineLogo from "../../public/assets/images/TwoZeroNineLogo.svg";
+import Button from "../Button";
 
 export default function Header() {
 	return (
-		<div className="flex justify-between w-full mt-8 mb-20 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
-			<h2>
-				<Link href="/">
-					<a className="hover:underline">TwoZeroNine Blog</a>
+		<div className="container mx-auto text-white">
+			<div className="flex flex-row items-center justify-between h-20 mx-auto ">
+				<Link href="/blog">
+					<a className="flex mt-2 text-center">
+						<TwoZeroNineLogo className="h-8"></TwoZeroNineLogo>
+						<h3 className="ml-3 text-4xl font-bold py-auto"> - Blog</h3>
+					</a>
 				</Link>
-			</h2>
-			<h2>
-				<Link href="/">
-					<a className="text-lg text-accent-1 hover:underline">Main Site</a>
-				</Link>
-			</h2>
+
+				<Button
+					text="Main site"
+					type="secondary"
+					width="w-32"
+					link="/"
+				></Button>
+			</div>
 		</div>
 	);
 }
