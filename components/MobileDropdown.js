@@ -159,7 +159,7 @@ export default function MyDropdown() {
 										variants={slideInLeft}
 									>
 										{({ active }) => (
-											<Link href="/">
+											<Link href="/blog">
 												<a
 													className={`${
 														active && "text-accent-main"

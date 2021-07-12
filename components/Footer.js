@@ -29,6 +29,13 @@ export default function Footer() {
 						margin="sm:mt-4 mt-8"
 						extras="sm:self-end"
 					></Button>
+					<div className="flex mt-6 sm:mt-8 sm:pr-1 sm:self-end">
+						<Link href="/blog">
+							<a className="font-bold text-gray-300 hover:text-accent-muted">
+								<p>Read the blog</p>
+							</a>
+						</Link>
+					</div>
 					<div className="flex mt-8 mb-2">
 						<Link href="https://twitter.com/Twozeronineuk">
 							<a>
