@@ -7,9 +7,9 @@ export default function Header() {
 		<div className="container mx-auto text-white">
 			<div className="flex flex-row items-center justify-between h-20 mx-auto ">
 				<Link href="/blog">
-					<a className="flex mt-2 text-center">
-						<TwoZeroNineLogo className="h-8"></TwoZeroNineLogo>
-						<h3 className="ml-3 text-4xl font-bold py-auto"> - Blog</h3>
+					<a className="flex w-24 pr-6 text-center">
+						<TwoZeroNineLogo className="w-full"></TwoZeroNineLogo>
+						{/* <h3 className="ml-3 text-4xl font-bold py-auto"> - Blog</h3> */}
 					</a>
 				</Link>
 
