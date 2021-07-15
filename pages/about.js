@@ -27,12 +27,13 @@ export default function services() {
 
 				<div className="container relative flex flex-col justify-center w-full px-4 mx-auto mt-16 text-white lg:max-w-4xl ">
 					<div className="z-10 leading-6 text-white">
-						<div className="-mx-12 -mt-12 lg:-mt-0 md:-mt-12 sm:mr-0 sm:-ml-12 sm:w-3/5 sm:float-right">
+						<div className="flex justify-center mb-8 -mx-20 -mt-24 sm:-mt-16 sm:-mr-4 sm:w-3/5 sm:float-right ">
 							<Image
 								className="-z-20"
 								src={graemeWithDesk}
 								width="600"
 								height="600"
+								placeholder="blur"
 							></Image>
 						</div>
 						<p className="z-20">
