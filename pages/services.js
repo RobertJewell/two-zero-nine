@@ -59,28 +59,25 @@ export default function services() {
 
 				<AppleDigitalMasters></AppleDigitalMasters>
 
-				<OptionsContainer
-					title="Other Services:"
-					desciption={[
-						"Looking for something else?",
-						<br />,
-						"We offer a host of other audio services:",
-					]}
-				>
+				<OptionsContainer title="Other Services:">
 					<OptionsItem
 						title="Urgent turn around"
+						key="Urgent turn around"
 						description="In a hurry? Just let us know and we can arrange for a quick turn around to suit your schedule."
 					></OptionsItem>
 					<OptionsItem
 						title="Radio Edits"
+						key="Radio Edits"
 						description="Same mastering quality, tweaked to your needs."
 					></OptionsItem>
 					<OptionsItem
 						title="Mixing"
+						key="Mixing"
 						description="Just recorded? Or have a track you’ve been producing? Have your track mixed to your requirements. We’ll prepare your track for mastering & release."
 					></OptionsItem>
 					<OptionsItem
 						title="Stem Mastering"
+						key="Stem Mastering"
 						description="Don’t need a full mix session? We can add those final touches and have your track mastered in the same session with a stem master. Same quality, same end results."
 					></OptionsItem>
 				</OptionsContainer>
