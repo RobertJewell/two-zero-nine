@@ -114,12 +114,12 @@ const faqs = [
 export default function Example() {
 	return (
 		<div className="container flex flex-col justify-center w-full px-4 mx-auto text-white sm:items-center">
-			<div className="max-w-5xl mx-auto mt-20">
+			<div className="max-w-5xl mx-auto mt-16">
 				<dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
 					{faqs.map((faq) => (
 						<div key={faq.question}>
-							<dt className="font-semibold text-white">{faq.question}</dt>
-							<dd className="mt-3 text-gray-300">{faq.answer}</dd>
+							<dt className="font-bold text-white">{faq.question}</dt>
+							<dd className="mt-4 text-gray-300">{faq.answer}</dd>
 						</div>
 					))}
 				</dl>
