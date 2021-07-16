@@ -1,7 +1,7 @@
 import Button from "./Button";
 import Image from "next/image";
-import profilePicture from "../public/assets/images/graeme-with-desk.png";
-import appleDigitalMasters from "../public/assets/images/apple-digital-masters-button.png";
+import profilePicture from "../public/assets/images/graeme-with-desk.webp";
+import appleDigitalMasters from "../public/assets/images/apple-digital-masters-button.webp";
 
 export default function AboutSection() {
 	return (

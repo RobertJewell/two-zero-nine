@@ -1,5 +1,5 @@
 import Image from "next/image";
-import testamonialPhoto from "../public/assets/images/dave-pensado.png";
+import testamonialPhoto from "../public/assets/images/dave-pensado.webp";
 
 export default function Testamonial() {
 	return (

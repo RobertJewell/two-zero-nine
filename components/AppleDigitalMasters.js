@@ -1,6 +1,6 @@
 import Button from "./Button";
 import Image from "next/image";
-import AppleAlbumArt from "../public/assets/images/album-art-apple.png";
+import AppleAlbumArt from "../public/assets/images/album-art-apple.webp";
 
 export default function AppleDigitalMasters() {
 	return (

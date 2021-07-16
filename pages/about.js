@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import GradientBG from "../components/decoration/GradientBG";
 import PageTitle from "../components/PageTitle";
-import graemeWithDesk from "../public/assets/images/graeme_cutout.png";
+import graemeWithDesk from "../public/assets/images/graeme_cutout.webp";
 
 export default function services() {
 	return (
