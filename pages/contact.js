@@ -15,11 +15,11 @@ export default function contact() {
 				<NavBar></NavBar>
 				<Vinyl
 					width="w-600 md:w-800"
-					scale="scale-150"
+					scale="scale-150 sm:scale-100"
 					rotation="rotate-90"
-					translationX="translate-x-2/4 right-0"
-					translationY="-translate-y-1/4"
-					other="hidden sm:block"
+					translationX="translate-x-3/4 sm:translate-x-2/4  right-0"
+					translationY="sm:-translate-y-1/4 translate-y-1/4"
+					other=""
 				></Vinyl>
 
 				<GradientBG
@@ -33,6 +33,14 @@ export default function contact() {
 				<PageTitle title="Get in touch" classes="max-w-5xl px-4"></PageTitle>
 
 				<ContactForm></ContactForm>
+
+				<GradientBG
+					color="purple"
+					height="h-800"
+					flipped={false}
+					opacity="opacity-60"
+					translateY="-translate-y-2/4 "
+				></GradientBG>
 
 				<Map></Map>
 
