@@ -56,7 +56,7 @@ const NavBar = () => {
 						text="Contact"
 						type="secondary"
 						width="w-24"
-						link="/"
+						link="/contact"
 					></Button>
 				</div>
 			</div>
