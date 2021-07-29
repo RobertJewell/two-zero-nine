@@ -20,7 +20,7 @@ export default function ProductFeatured({ title, description }) {
 						text="Get started"
 						type="primary"
 						width="w-40"
-						link="/"
+						link="/contact"
 						margin="mt-8"
 					></Button>
 					<Button
