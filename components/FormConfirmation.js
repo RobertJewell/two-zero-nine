@@ -5,7 +5,7 @@ export default function FormConfirmation({ isVisible }) {
 		<AnimatePresence>
 			{isVisible === "confirmation" && (
 				<motion.div
-					className="absolute flex flex-col items-center justify-center w-full h-full mx-8 text-center"
+					className="absolute flex flex-col items-center justify-center w-full h-full text-center"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 1 }}
