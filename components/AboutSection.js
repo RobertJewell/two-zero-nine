@@ -31,7 +31,7 @@ export default function AboutSection() {
 							type="secondaryDark"
 							width="w-28"
 							margin="mt-8"
-							link="/"
+							link="/about"
 							extras=" "
 						></Button>
 					</div>
@@ -60,7 +60,7 @@ export default function AboutSection() {
 							text={
 								<Image
 									src={appleDigitalMasters}
-									alt="Photo of Graeme at his desk"
+									alt="Apple digital masters logo"
 									width={300}
 									height={120}
 									placeholder="blur"
