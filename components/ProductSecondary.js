@@ -18,7 +18,7 @@ export default function ProductSecondary({
 					text="Get started"
 					type="secondary"
 					width="w-36"
-					link="/"
+					link="/contact"
 					margin="mt-8"
 				></Button>
 			</div>
