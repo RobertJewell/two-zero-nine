@@ -159,24 +159,7 @@ export default function MyDropdown() {
 										variants={slideInLeft}
 									>
 										{({ active }) => (
-											<Link href="/blog">
-												<a
-													className={`${
-														active && "text-accent-main"
-													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
-												>
-													Blog
-												</a>
-											</Link>
-										)}
-									</Menu.Item>
-									<Menu.Item
-										as={motion.div}
-										className="flex w-full outline-none"
-										variants={slideInLeft}
-									>
-										{({ active }) => (
-											<Link href="/">
+											<Link href="/contact">
 												<a
 													className={`${
 														active && "text-accent-main"
