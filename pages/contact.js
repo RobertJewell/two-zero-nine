@@ -8,6 +8,7 @@ import Vinyl from "../components/decoration/Vinyl";
 import Map from "../components/Map";
 import "mapbox-gl/dist/mapbox-gl.css";
 
+
 export default function contact() {
 	return (
 		<div className="overflow-hidden">
