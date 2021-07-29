@@ -25,7 +25,7 @@ export default function Footer() {
 						text="Get started"
 						type="secondary"
 						width="w-36"
-						link="/"
+						link="/contact"
 						margin="sm:mt-4 mt-8"
 						extras="sm:self-end"
 					></Button>
