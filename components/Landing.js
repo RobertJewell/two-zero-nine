@@ -17,7 +17,7 @@ export default function Landing() {
 					type="primary"
 					width="w-36"
 					margin="sm:mx-4"
-					link="/"
+					link="/contact"
 					extras=""
 				></Button>
 				<Button
@@ -25,7 +25,7 @@ export default function Landing() {
 					type="secondary"
 					width="w-36"
 					margin="sm:mx-4"
-					link="/"
+					link="/services"
 					extras="hidden sm:flex"
 				></Button>
 			</div>
