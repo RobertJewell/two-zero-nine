@@ -31,7 +31,7 @@ const faqs = [
 	{
 		question: "What analogue equipment do you use?",
 		answer:
-			"We use a combination of tubes, transformers and other class-A equipment: HCL Thermos Mastering EQ, HCL Varis Tube compressor, Custom Sontec 250 clone, Elysia Xpressor VCA compressor and High Voltage EQ6S to name a few! We also use Prism converters for excellent monitoring",
+			"We use a combination of tubes, transformers and other class-A equipment: HCL Thermos Mastering EQ, HCL Varis Tube compressor, Custom Sontec 250 clone, Elysia Xpressor VCA compressor and Kii Three monitors to name a few! We also use Prism converters for excellent monitoring",
 	},
 	{
 		question: "What kind of plugins do you use?",
@@ -97,7 +97,7 @@ const faqs = [
 	{
 		question: "Can I request a test master?",
 		answer:
-			"In some instances, test masters are fine to request. However, due to workload, this may not always be possible. Please contact us first with your audio. Test masters will be uploaded to a private a Soundcloud link for you to listen to so quality will vary. Please keep this in mind!",
+			"In some instances, test masters are fine to request. However, due to workload, this may not always be possible. Please contact us first with your audio. Test masters will be uploaded to a private link for you to listen to so quality will vary. Please keep this in mind!",
 	},
 	{
 		question: "Do I really need my music to be mastered?",
