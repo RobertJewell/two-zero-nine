@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { useFormspark } from "@formspark/use-formspark";
-import { useState } from "react";
+import Botpoison from "@botpoison/browser";
 import LoadingSpinner from "./LoadingSpinner";
 import FormConfirmation from "./FormConfirmation";
 
@@ -33,6 +34,10 @@ export default function ContactForm() {
 		formId: FORMSPARK_FORM_ID,
 	});
 
+	const botpoison = new Botpoison({
+		publicKey: "pk_3aa5d554-b0f3-4b43-ad98-31f1b2b8ee86",
+	});
+
 	// get functions to build form with useForm() hook
 	const { register, handleSubmit, formState, reset } = useForm(formOptions);
 	const { errors } = formState;
@@ -41,10 +46,13 @@ export default function ContactForm() {
 		//update state to loading
 		setFormVisibility("loading");
 
+		//run botpoison check
+		const { solution } = await botpoison.challenge();
+
 		//Replace new line characters with HTML for email
 		const messageWithBreaks = data.message.replace(/\n/g, "<br>");
 
-		await submit({ ...data, message: messageWithBreaks });
+		await submit({ ...data, message: messageWithBreaks, _botpoison: solution });
 
 		//update state to confirmed
 		let makeConfirmationVisible = setTimeout(() => {

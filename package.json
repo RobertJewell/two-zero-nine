@@ -8,6 +8,7 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"@botpoison/browser": "^0.1.27",
 		"@formspark/use-formspark": "^0.1.33",
 		"@headlessui/react": "^1.3.0",
 		"@heroicons/react": "^1.0.2",
