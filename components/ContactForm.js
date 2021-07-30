@@ -57,7 +57,7 @@ export default function ContactForm() {
 		//update state to visible after 6 seconds removing the confirmation message after 5 seconds
 		let makeNothingVisible = setTimeout(() => {
 			setFormVisibility("none");
-		}, 500);
+		}, 5000);
 		let makeFormVisible = setTimeout(() => {
 			setFormVisibility("visible");
 		}, 6500);
@@ -65,7 +65,7 @@ export default function ContactForm() {
 
 	return (
 		<div className="container px-4 pb-12 mx-auto mt-20 text-white lg:max-w-5xl sm:pb-8">
-			<div className="relative flex flex-col bg-white md:flex-row rounded-2xl backdrop-blur-sm backdrop-filter bg-opacity-5">
+			<div className="relative flex flex-col bg-white md:flex-row rounded-2xl backdrop-blur backdrop-filter bg-opacity-5">
 				<div className="flex flex-col items-center justify-start w-full p-8 bg-white md:pt-24 rounded-2xl flex-2 md:w-300 lg:w-80">
 					<h3 className="mb-6 text-2xl font-bold text-dark ">
 						Let's discuss your project:
