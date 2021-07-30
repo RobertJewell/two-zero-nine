@@ -11,7 +11,9 @@ export default function LoadingSpinner({ isVisible }) {
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.6 }}
 						exit={{ opacity: 0 }}
-					></motion.div>
+					>
+						<p>.</p>
+					</motion.div>
 				</div>
 			)}
 		</AnimatePresence>
