@@ -3,6 +3,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import MobileDropdownButton from "./MobileDropdownButton";
 
+const links = [
+	{ name: "Home", link: "/" },
+	{ name: "Services", link: "/services" },
+	{ name: "About", link: "/about" },
+	{ name: "Portfolio", link: "/portfolio" },
+	{ name: "FAQ", link: "/faq" },
+	{ name: "Contact", link: "/contact" },
+];
+
 const fadeIn = {
 	visible: {
 		opacity: 1,
@@ -68,108 +77,26 @@ export default function MyDropdown() {
 									static
 									className="fixed flex flex-col items-end justify-center w-1/2 mt-20 text-xl text-white rounded-lg outline-none -right-0"
 								>
-									<Menu.Item
-										as={motion.div}
-										className="flex w-full outline-none"
-										variants={slideInLeft}
-									>
-										{({ active }) => (
-											<Link href="/">
-												<a
-													className={`${
-														active && "text-accent-main"
-													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
-												>
-													Home
-												</a>
-											</Link>
-										)}
-									</Menu.Item>
-									<Menu.Item
-										as={motion.div}
-										className="flex w-full outline-none"
-										variants={slideInLeft}
-									>
-										{({ active }) => (
-											<Link href="/services">
-												<a
-													className={`${
-														active && "text-accent-main"
-													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
-												>
-													Services
-												</a>
-											</Link>
-										)}
-									</Menu.Item>
-									<Menu.Item
-										as={motion.div}
-										className="flex w-full outline-none"
-										variants={slideInLeft}
-									>
-										{({ active }) => (
-											<Link href="/about">
-												<a
-													className={`${
-														active && "text-accent-main"
-													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
-												>
-													About
-												</a>
-											</Link>
-										)}
-									</Menu.Item>
-									<Menu.Item
-										as={motion.div}
-										className="flex w-full outline-none"
-										variants={slideInLeft}
-									>
-										{({ active }) => (
-											<Link href="/">
-												<a
-													className={`${
-														active && "text-accent-main"
-													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
-												>
-													Portfolio
-												</a>
-											</Link>
-										)}
-									</Menu.Item>
-									<Menu.Item
-										as={motion.div}
-										className="flex w-full outline-none"
-										variants={slideInLeft}
-									>
-										{({ active }) => (
-											<Link href="/faq">
-												<a
-													className={`${
-														active && "text-accent-main"
-													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
-												>
-													FAQ
-												</a>
-											</Link>
-										)}
-									</Menu.Item>
-									<Menu.Item
-										as={motion.div}
-										className="flex w-full outline-none"
-										variants={slideInLeft}
-									>
-										{({ active }) => (
-											<Link href="/contact">
-												<a
-													className={`${
-														active && "text-accent-main"
-													} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
-												>
-													Contact
-												</a>
-											</Link>
-										)}
-									</Menu.Item>
+									{links.map((link) => (
+										<Menu.Item
+											key={link.name}
+											as={motion.div}
+											className="flex w-full outline-none"
+											variants={slideInLeft}
+										>
+											{({ active }) => (
+												<Link href={link.link}>
+													<a
+														className={`${
+															active && "text-accent-main"
+														} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
+													>
+														{link.name}
+													</a>
+												</Link>
+											)}
+										</Menu.Item>
+									))}
 								</Menu.Items>
 							</motion.div>
 						)}
