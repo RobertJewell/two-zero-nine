@@ -14,6 +14,7 @@ export default function LoadingSpinner({ isVisible }) {
 					>
 						<p>.</p>
 					</motion.div>
+					<div className="w-8 h-8 bg-red-600"></div>
 				</div>
 			)}
 		</AnimatePresence>
