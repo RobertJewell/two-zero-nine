@@ -43,3 +43,110 @@ button:focus {
 .image-overflow div {
 	overflow: visible !important;
 }
+
+.progressBar {
+	--bar-bg: none;
+	--seek-before-width: 0;
+	--seek-before-color: #2aeddd;
+	--knobby: #2aeddd;
+	--selectedKnobby: #2aeddd;
+	--height: 0.5rem;
+	--border-radius: 1rem;
+	--margin-top-progress: 8px;
+
+	appearance: none;
+	padding: 12px 0;
+	background: var(--bar-bg);
+	border-radius: var(--border-radius);
+	position: relative;
+	width: 100%;
+	height: var(--height);
+	outline: none;
+}
+
+/* progress bar - safari */
+.progressBar::-webkit-slider-runnable-track {
+	background: var(--bar-bg);
+	border-radius: 10px;
+	position: relative;
+	width: 100%;
+	height: var(--height);
+	outline: none;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-track {
+	background: var(--bar-bg);
+	border-radius: var(--border-radius);
+	position: relative;
+	width: 100%;
+	height: var(--height);
+	outline: none;
+}
+
+.progressBar::-moz-focus-outer {
+	border: 0;
+}
+
+/* progress bar - chrome and safari */
+.progressBar::before {
+	content: "";
+	margin-top: var(--margin-top-progress);
+	height: var(--height);
+	width: var(--seek-before-width);
+	background-color: var(--seek-before-color);
+	border-radius: var(--border-radius);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-progress {
+	background-color: var(--seek-before-color);
+	border-top-left-radius: var(--border-radius);
+	border-bottom-left-radius: var(--border-radius);
+	height: var(--height);
+	margin-top: var(--margin-top-progress);
+}
+
+/* knobby - chrome and safari */
+.progressBar::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 0;
+	width: 0;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	margin: 0 0 0 0;
+	z-index: 3;
+	box-sizing: border-box;
+}
+
+/* knobby while dragging - chrome and safari */
+.progressBar:active::-webkit-slider-thumb {
+	transform: scale(1);
+	background: var(--selectedKnobby);
+}
+
+/* knobby - firefox */
+.progressBar::-moz-range-thumb {
+	height: 0;
+	width: 0;
+	border-radius: 50%;
+	border: transparent;
+	background-color: var(--knobby);
+	cursor: pointer;
+	position: relative;
+	z-index: 3;
+	box-sizing: border-box;
+}
+
+/* knobby while dragging - firefox */
+.progressBar:active::-moz-range-thumb {
+	transform: scale(1);
+	background: var(--selectedKnobby);
+}
