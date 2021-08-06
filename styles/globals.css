@@ -101,7 +101,7 @@ button:focus {
 	left: 0;
 	z-index: 2;
 	cursor: pointer;
-transition: width 1s;
+transition: width 1s linear;
 
 }
 
