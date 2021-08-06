@@ -12,6 +12,7 @@ export default function AudioPlayer({ src, albumart, artist, trackname }) {
 	// references
 	const audioPlayer = useRef(); // reference the audio component
 	const progressBar = useRef(); // reference the progress bar
+	const progressBarMobile = useRef(); // reference the mobile progress bar
 	const animationRef = useRef(); // reference the animation
 
 	useEffect(() => {
@@ -60,12 +61,20 @@ export default function AudioPlayer({ src, albumart, artist, trackname }) {
 			"--seek-before-width",
 			`${(progressBar.current.value / duration) * 100}%`
 		);
+		progressBarMobile.current.style.setProperty(
+			"--seek-before-width",
+			`${(progressBar.current.value / duration) * 100}%`
+		);
 		setCurrentTime(progressBar.current.value);
 	};
 
 	return (
 		<div className="container flex flex-col justify-center w-full px-4 mx-auto mt-12 text-dark">
 			<div className="relative flex items-center w-full max-w-3xl p-4 mx-auto bg-white rounded-lg sm:py-6 sm:px-8 ">
+				<div
+					className="absolute left-0 h-full rounded-lg bg-accent-main opacity-20 progressBar--mobile sm:hidden"
+					ref={progressBarMobile}
+				></div>
 				<audio
 					ref={audioPlayer}
 					onLoadedMetadata={() => changePlayerCurrentTime()}
@@ -78,9 +87,13 @@ export default function AudioPlayer({ src, albumart, artist, trackname }) {
 				<div className="relative z-10 w-24 h-24 sm:h-36 sm:w-36 sm:m-0">
 					<button
 						onClick={togglePlayPause}
-						className="absolute z-20 flex items-center justify-center w-full h-full"
+						className="absolute z-20 flex items-center justify-center w-full h-full p-4 sm:p-0"
 					>
-						{isPlaying ? <PauseButton /> : <PlayButton className="ml-2" />}
+						{isPlaying ? (
+							<PauseButton className="w-6 sm:w-8" />
+						) : (
+							<PlayButton className="w-8 ml-2 sm:w-10" />
+						)}
 					</button>
 					<div className="absolute z-10 w-full h-full bg-gray-700 rounded-lg opacity-50"></div>
 
@@ -104,15 +117,15 @@ export default function AudioPlayer({ src, albumart, artist, trackname }) {
 					</div>
 
 					{/* Timeline */}
-					<div className="relative flex flex-col w-full top-[15px] ">
+					<div className="relative sm:flex flex-col w-full top-[15px] hidden ">
 						{/* time */}
-						<div className="hidden -mb-1 text-sm text-gray-500 sm:justify-between sm:flex ">
+						<div className="flex -mb-1 text-sm text-gray-500 sm:justify-between">
 							<div>{calculateTime(currentTime)}</div>
 							<div>{duration ? calculateTime(duration) : "0:00"}</div>
 						</div>
 						{/* progress bar */}
 						<div className="relative">
-							<div className="absolute hidden w-full h-2 bg-gray-300 rounded-full pointer-events-none top-2 sm:block"></div>
+							<div className="absolute w-full h-2 bg-gray-300 rounded-full pointer-events-none top-2 "></div>
 
 							<input
 								type="range"
