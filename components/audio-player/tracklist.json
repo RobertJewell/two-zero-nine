@@ -2,21 +2,73 @@
 	{
 		"title": "True Love Will Find You In The End",
 		"artist": "Birthmarks",
-		"source": "public/assets/audio-player/audio/Birthmarks - True Love Will Find You In The End.mp3"
+		"source": "/assets/audio-player/audio/Birthmarks - True Love Will Find You In The End.mp3",
+		"duration": 229
 	},
 	{
 		"title": "Come A Little Closer",
 		"artist": "Circanineti",
-		"source": "public/assets/audio-player/audio/Circanineti - Come A Little Closer.mp3"
+		"source": "/assets/audio-player/audio/Circanineti - Come A Little Closer.mp3",
+		"duration": 188
 	},
 	{
 		"title": "Troubles",
 		"artist": "Dan Disgrace",
-		"source": "public/assets/audio-player/audio/Dan Disgrace - Troubles.mp3"
+		"source": "/assets/audio-player/audio/Dan Disgrace - Troubles.mp3",
+		"duration": 177
 	},
 	{
 		"title": "Hold On",
 		"artist": "Dan Goodwright, Mani D-Whyte, Circanineti",
-		"source": "public/assets/audio-player/audio/Dan Goodwright, Mani D-Whyte, Circanineti - Hold On.mp3"
+		"source": "/assets/audio-player/audio/Dan Goodwright, Mani D-Whyte, Circanineti - Hold On.mp3",
+		"duration": 215
+	},
+	{
+		"title": "Starting Over",
+		"artist": "Emily Matts",
+		"source": "/assets/audio-player/audio/Emily Matts - Starting Over.mp3",
+		"duration": 207
+	},
+	{
+		"title": "Moon Light Monsters",
+		"artist": "Davion J",
+		"source": "/assets/audio-player/audio/Davion J - Moon Light Monsters.mp3",
+		"duration": 144
+	},
+	{
+		"title": "Sometimes We Can Hear The Voices",
+		"artist": "Rich Ragany & The Digressions",
+		"source": "/assets/audio-player/audio/Rich Ragany & The Digressions - Sometimes We Can Hear The Voices.mp3",
+		"duration": 177
+	},
+	{
+		"title": "DripTease",
+		"artist": "MONAKIS",
+		"source": "/assets/audio-player/audio/MONAKIS - DripTease.mp3",
+		"duration": 221
+	},
+	{
+		"title": "Come With Me",
+		"artist": "Johanna Lim",
+		"source": "/assets/audio-player/audio/Johanna Lim - Come With Me.mp3",
+		"duration": 172
+	},
+	{
+		"title": "This Won't Last Forever",
+		"artist": "Serotones",
+		"source": "/assets/audio-player/audio/Serotones - This Won't Last Forever.mp3",
+		"duration": 231
+	},
+	{
+		"title": "Amsterdam",
+		"artist": "RIVIA",
+		"source": "/assets/audio-player/audio/RIVIA - Amsterdam.mp3",
+		"duration": "4:02"
+	},
+	{
+		"title": "Walk",
+		"artist": "We Three Kings",
+		"source": "/assets/audio-player/audio/We Three Kings - Walk.mp3",
+		"duration": 263
 	}
 ]

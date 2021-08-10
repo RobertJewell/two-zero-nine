@@ -3,23 +3,53 @@ import PlayButton from "../../public/assets/audio-player/images/svg/play.svg";
 import PauseButton from "../../public/assets/audio-player/images/svg/pause.svg";
 import Image from "next/image";
 
-export default function AudioPlayer({ src, albumart, artist, trackname }) {
+export default function AudioPlayer({
+	src,
+	albumart,
+	artist,
+	trackname,
+	trackDuration,
+}) {
 	// state
 	const [isPlaying, setIsPlaying] = useState(false);
-	const [duration, setDuration] = useState(0);
 	const [currentTime, setCurrentTime] = useState(0);
+	const [currentProgress, setCurrentProgress] = useState(0);
 
 	// references
 	const audioPlayer = useRef(); // reference the audio component
 	const progressBar = useRef(); // reference the progress bar
 	const progressBarMobile = useRef(); // reference the mobile progress bar
 	const animationRef = useRef(); // reference the animation
+	const initialRender = useRef(true); //check if it's the inital render
 
+	//reset on src change
 	useEffect(() => {
-		const seconds = Math.floor(audioPlayer.current.duration);
-		setDuration(seconds);
-		progressBar.current.max = seconds;
-	}, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
+		if (initialRender.current) {
+			progressBar.current.max = trackDuration;
+			initialRender.current = false;
+		} else {
+			progressBar.current.max = trackDuration;
+			cancelAnimationFrame(animationRef.current);
+			setIsPlaying(false);
+			timeTravel(0);
+		}
+	}, [trackname]);
+
+	//reset at end of track
+	useEffect(() => {
+		audioPlayer?.current?.addEventListener("ended", () => {
+			setIsPlaying(false);
+			timeTravel(0);
+			cancelAnimationFrame(animationRef.current);
+		});
+		return () => {
+			audioPlayer?.current?.removeEventListener("ended", () => {
+				cancelAnimationFrame(animationRef.current);
+				setIsPlaying(false);
+				timeTravel(0);
+			});
+		};
+	}, []);
 
 	const calculateTime = (secs) => {
 		const minutes = Math.floor(secs / 60);
@@ -46,39 +76,48 @@ export default function AudioPlayer({ src, albumart, artist, trackname }) {
 	};
 
 	const whilePlaying = () => {
-		progressBar.current.value = audioPlayer.current.currentTime;
+		progressBar.current.value = parseInt(audioPlayer.current.currentTime);
 		changePlayerCurrentTime();
 		animationRef.current = requestAnimationFrame(whilePlaying);
 	};
 
+	const changePlayerCurrentTime = () => {
+		// progressBar.current.style.setProperty(
+		// 	"--seek-before-width",
+		// 	`${(progressBar.current.value / trackDuration) * 100}%`
+		// );
+		// progressBarMobile.current.style.setProperty(
+		// 	"--seek-before-width",
+		// 	`${(progressBar.current.value / trackDuration) * 100}%`
+		// );
+		setCurrentTime(parseInt(audioPlayer.current.currentTime));
+		setCurrentProgress(currentTime / trackDuration);
+	};
+
 	const changeRange = () => {
 		audioPlayer.current.currentTime = progressBar.current.value;
+		setCurrentProgress(progressBar.current.value / trackDuration);
 		changePlayerCurrentTime();
 	};
 
-	const changePlayerCurrentTime = () => {
-		progressBar.current.style.setProperty(
-			"--seek-before-width",
-			`${(progressBar.current.value / duration) * 100}%`
-		);
-		progressBarMobile.current.style.setProperty(
-			"--seek-before-width",
-			`${(progressBar.current.value / duration) * 100}%`
-		);
-		setCurrentTime(progressBar.current.value);
+	const timeTravel = (newTime) => {
+		progressBar.current.value = newTime;
+		changeRange();
 	};
 
 	return (
 		<div className="container flex flex-col justify-center w-full px-4 mx-auto mt-12 text-dark">
 			<div className="relative flex items-center w-full max-w-3xl p-4 mx-auto bg-white rounded-lg sm:py-6 sm:px-8 ">
 				<div
-					className="absolute left-0 h-full rounded-lg bg-accent-main opacity-20 progressBar--mobile sm:hidden"
+					className={`absolute left-0 h-full rounded-lg bg-accent-main opacity-20 sm:hidden width-[${Math.floor(
+						currentProgress * 1000
+					)}px]`}
 					ref={progressBarMobile}
 				></div>
 				<audio
 					ref={audioPlayer}
 					onLoadedMetadata={() => changePlayerCurrentTime()}
-					src="https://cdn.simplecast.com/audio/cae8b0eb-d9a9-480d-a652-0defcbe047f4/episodes/af52a99b-88c0-4638-b120-d46e142d06d3/audio/500344fb-2e2b-48af-be86-af6ac341a6da/default_tc.mp3"
+					src={src}
 					preload="metadata"
 					className="hidden"
 				></audio>
@@ -108,12 +147,10 @@ export default function AudioPlayer({ src, albumart, artist, trackname }) {
 
 				<div className="z-10 flex flex-col justify-between flex-1 ml-6 sm:h-36 -bottom">
 					<div className="flex flex-col">
-						<h3 className="text-2xl font-bold tracking-tight text-dark">
-							Sometimes
+						<h3 className="text-xl font-bold tracking-tight sm:text-2xl text-dark">
+							{trackname}
 						</h3>
-						<p className="text-sm text-gray-600">
-							Dan Goodwright, Mani D-Whyte, Circanineti
-						</p>
+						<p className="text-sm text-gray-600">{artist}</p>
 					</div>
 
 					{/* Timeline */}
@@ -121,10 +158,11 @@ export default function AudioPlayer({ src, albumart, artist, trackname }) {
 						{/* time */}
 						<div className="flex -mb-1 text-sm text-gray-500 sm:justify-between">
 							<div>{calculateTime(currentTime)}</div>
-							<div>{duration ? calculateTime(duration) : "0:00"}</div>
+							<div>{calculateTime(trackDuration)}</div>
 						</div>
 						{/* progress bar */}
 						<div className="relative">
+							<div className="absolute w-full h-2 bg-gray-300 rounded-full pointer-events-none top-2 "></div>
 							<div className="absolute w-full h-2 bg-gray-300 rounded-full pointer-events-none top-2 "></div>
 
 							<input
