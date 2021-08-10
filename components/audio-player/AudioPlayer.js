@@ -82,14 +82,6 @@ export default function AudioPlayer({
 	};
 
 	const changePlayerCurrentTime = () => {
-		// progressBar.current.style.setProperty(
-		// 	"--seek-before-width",
-		// 	`${(progressBar.current.value / trackDuration) * 100}%`
-		// );
-		// progressBarMobile.current.style.setProperty(
-		// 	"--seek-before-width",
-		// 	`${(progressBar.current.value / trackDuration) * 100}%`
-		// );
 		setCurrentTime(parseInt(audioPlayer.current.currentTime));
 		setCurrentProgress(currentTime / trackDuration);
 	};
@@ -105,13 +97,16 @@ export default function AudioPlayer({
 		changeRange();
 	};
 
+	const divStyle = {
+		width: `${(currentTime / trackDuration) * 100}%`,
+	};
+
 	return (
 		<div className="container flex flex-col justify-center w-full px-4 mx-auto mt-12 text-dark">
 			<div className="relative flex items-center w-full max-w-3xl p-4 mx-auto bg-white rounded-lg sm:py-6 sm:px-8 ">
 				<div
-					className={`absolute left-0 h-full rounded-lg bg-accent-main opacity-20 sm:hidden width-[${Math.floor(
-						currentProgress * 1000
-					)}px]`}
+					style={divStyle}
+					className={`absolute left-0 h-full rounded-lg bg-accent-main opacity-20 sm:hidden`}
 					ref={progressBarMobile}
 				></div>
 				<audio
@@ -162,7 +157,10 @@ export default function AudioPlayer({
 						</div>
 						{/* progress bar */}
 						<div className="relative">
-							<div className="absolute w-full h-2 bg-gray-300 rounded-full pointer-events-none top-2 "></div>
+							<div
+								style={divStyle}
+								className="absolute z-10 w-full h-2 rounded-full pointer-events-none bg-accent-main top-2"
+							></div>
 							<div className="absolute w-full h-2 bg-gray-300 rounded-full pointer-events-none top-2 "></div>
 
 							<input
