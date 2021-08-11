@@ -39,6 +39,14 @@ export default function listen() {
 					trackDuration={tracksJSON[currentTrack].duration}
 				></AudioPlayer>
 
+				<GradientBG
+					color="purple"
+					height="h-800"
+					flipped={false}
+					opacity="opacity-60"
+					translateY="translate-y-1/4"
+				></GradientBG>
+
 				<Tracklist
 					tracksJSON={tracksJSON}
 					selectTrack={selectTrack}
