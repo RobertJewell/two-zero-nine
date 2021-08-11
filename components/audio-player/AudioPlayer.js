@@ -30,8 +30,8 @@ export default function AudioPlayer({
 		} else {
 			progressBar.current.max = trackDuration;
 			cancelAnimationFrame(animationRef.current);
-			setIsPlaying(false);
 			timeTravel(0);
+			play();
 		}
 	}, [trackname]);
 
@@ -61,6 +61,7 @@ export default function AudioPlayer({
 
 	const play = () => {
 		audioPlayer.current.play();
+		setIsPlaying(true);
 		animationRef.current = requestAnimationFrame(whilePlaying);
 	};
 
