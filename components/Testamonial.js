@@ -1,5 +1,5 @@
 import Image from "next/image";
-import testamonialPhoto from "../public/assets/images/dave-pensado.webp";
+import testamonialPhoto from "../public/assets/images/Joe-BW.jpg";
 
 export default function Testamonial() {
 	return (
@@ -15,12 +15,13 @@ export default function Testamonial() {
 					></Image>
 				</div>
 				<p className="max-w-md mt-8 leading-6 text-center text-gray-700">
-					“ I used to struggle with terrible sounding music but then I got in
-					touch with Graeme, and now everything in my life is better. I’m going
-					to get his face as a tattoo next week! “
+					“ Above all else, he gave a killer sounding master. As a mix engineer,
+					that's the most important part. Not only that, the turnaround time and
+					customer service was amazing. I'll definitely be using Two Zero Nine
+					again soon! “
 				</p>
-				<p className="mt-8 font-bold text-center text-gray-900">Big Dave</p>
-				<p className="mb-8 text-center text-gray-500">@davepensado</p>
+				<p className="mt-8 font-bold text-center text-gray-900">Joe Sage</p>
+				<p className="mb-8 text-center text-gray-500">@joesageuk</p>
 			</div>
 		</div>
 	);
