@@ -1,6 +1,4 @@
 import Head from "next/head";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import Landing from "../components/Landing";
 import BrandLogos from "../components/BrandLogos";
 import AboutSection from "../components/AboutSection";
@@ -8,11 +6,45 @@ import ThreeStepPlan from "../components/ThreeStepPlan";
 import Testamonial from "../components/Testamonial";
 import Vinyl from "../components/decoration/Vinyl";
 import GradientBG from "../components/decoration/GradientBG";
+import { AnimatePresence, motion } from "framer-motion";
+
+const containerFade = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.1,
+			delayChildren: 0.3,
+		},
+	},
+};
+
+const fadeInUp = {
+	initial: { y: 60, opacity: 0 },
+	animate: {
+		y: 0,
+		opacity: 1,
+	},
+};
+
+const fadeIn = {
+	initial: { opacity: 0 },
+	animate: { opacity: 1 },
+	transition: { duration: 0.8 },
+};
 
 export default function Home() {
 	return (
-		<div className="overflow-hidden">
-			<div className="relative">
+		<motion.div exit={{ opacity: 0 }} className="pt-20 overflow-hidden">
+			<motion.div
+				variants={containerFade}
+				initial="initial"
+				animate="animate"
+				className="relative"
+			>
 				<Vinyl
 					width="w-600 md:w-800"
 					scale="scale-150"
@@ -20,8 +52,6 @@ export default function Home() {
 					translationX="translate-x-2/4  sm:-translate-x-2/4  "
 					translationY="sm:-translate-y-2/4"
 				></Vinyl>
-
-				<NavBar></NavBar>
 
 				<Landing></Landing>
 
@@ -56,9 +86,7 @@ export default function Home() {
 				<ThreeStepPlan></ThreeStepPlan>
 
 				<Testamonial></Testamonial>
-
-				<Footer></Footer>
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	);
 }

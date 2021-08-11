@@ -14,7 +14,7 @@ export default function Button({ type, link, text, width, margin, extras }) {
 	const classNames = `${width} ${buttonType[type]} `;
 	return (
 		<div className={`${margin} ${extras} flex flex-row justify-between`}>
-			<Link href={link}>
+			<Link href={link} scroll={false}>
 				<a className={classNames}>{text}</a>
 			</Link>
 		</div>

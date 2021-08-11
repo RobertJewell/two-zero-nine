@@ -1,11 +1,24 @@
 import React, { useState, useRef } from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import GradientBG from "../components/decoration/GradientBG";
 import PageTitle from "../components/PageTitle";
 import AudioPlayer from "../components/audio-player/AudioPlayer";
 import tracksJSON from "../components/audio-player/tracklist.json";
 import Tracklist from "../components/audio-player/Tracklist";
+import { AnimatePresence, motion } from "framer-motion";
+
+const containerFade = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.1,
+			delayChildren: 0.3,
+		},
+	},
+};
 
 export default function listen() {
 	const [currentTrack, setCurrentTrack] = useState(0);
@@ -17,18 +30,13 @@ export default function listen() {
 	};
 
 	return (
-		<div className="overflow-hidden">
-			<div className="relative">
-				<NavBar></NavBar>
-
-				<GradientBG
-					color="green"
-					height="h-800"
-					flipped={true}
-					opacity="opacity-60"
-					translateY="-translate-y-2/4 top-0"
-				></GradientBG>
-
+		<motion.div exit={{ opacity: 0 }} className="pt-20 overflow-hidden">
+			<motion.div
+				variants={containerFade}
+				initial="initial"
+				animate="animate"
+				className="relative"
+			>
 				<PageTitle title="Listen" classes="max-w-4xl px-4 lg:px-0"></PageTitle>
 
 				<AudioPlayer
@@ -51,9 +59,7 @@ export default function listen() {
 					tracksJSON={tracksJSON}
 					selectTrack={selectTrack}
 				></Tracklist>
-
-				<Footer></Footer>
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	);
 }

@@ -13,10 +13,11 @@ export default function ThreeStepPlan() {
 			</p>
 			<ThreeStepPlanPoint number="1" title="Send us your music" classes="mt-12">
 				<p className="max-w-sm mt-4 leading-6 text-gray-200">
-					We work with musicians & engineers all over the world, so even if
-					you’re not local to our mastering studio in Liverpool, you can still
-					use our online mastering services. We’ve made it really easy for you
-					to get your music ready for release:
+					Our engineer will take a listen to your mix. During this mix check
+					session we’ll discuss if we think there are elements in your mix which
+					could be adjusted slightly in order to get a better master. This is
+					completely normal and always helps us get better results for you and
+					your music!
 				</p>
 			</ThreeStepPlanPoint>
 			<ThreeStepPlanPoint

@@ -1,25 +1,33 @@
 import Head from "next/head";
 import Image from "next/image";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import GradientBG from "../components/decoration/GradientBG";
 import PageTitle from "../components/PageTitle";
 import graemeWithDesk from "../public/assets/images/graeme_cutout.webp";
+import { AnimatePresence, motion } from "framer-motion";
+
+const containerFade = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.1,
+			delayChildren: 0.3,
+		},
+	},
+};
 
 export default function services() {
 	return (
-		<div className="overflow-hidden">
-			<div className="relative">
-				<NavBar></NavBar>
-
-				<GradientBG
-					color="green"
-					height="h-800"
-					flipped={true}
-					opacity="opacity-60"
-					translateY="-translate-y-2/4 top-0"
-				></GradientBG>
-
+		<motion.div exit={{ opacity: 0 }} className="pt-20 overflow-hidden">
+			<motion.div
+				variants={containerFade}
+				initial="initial"
+				animate="animate"
+				className="relative"
+			>
 				<PageTitle
 					title="Two Zero Nine Mastering"
 					classes="max-w-4xl px-4"
@@ -94,9 +102,7 @@ export default function services() {
 						</div>
 					</div>
 				</div>
-
-				<Footer></Footer>
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	);
 }

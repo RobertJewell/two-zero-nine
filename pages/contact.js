@@ -1,19 +1,35 @@
 import Head from "next/head";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import PageTitle from "../components/PageTitle";
 import GradientBG from "../components/decoration/GradientBG";
 import ContactForm from "../components/ContactForm";
 import Vinyl from "../components/decoration/Vinyl";
 import Map from "../components/Map";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { AnimatePresence, motion } from "framer-motion";
 
+const containerFade = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.1,
+			delayChildren: 0.3,
+		},
+	},
+};
 
 export default function contact() {
 	return (
-		<div className="overflow-hidden">
-			<div className="relative">
-				<NavBar></NavBar>
+		<motion.div exit={{ opacity: 0 }} className="pt-20 overflow-hidden">
+			<motion.div
+				variants={containerFade}
+				initial="initial"
+				animate="animate"
+				className="relative"
+			>
 				<Vinyl
 					width="w-600 md:w-800"
 					scale="scale-150 sm:scale-100"
@@ -22,14 +38,6 @@ export default function contact() {
 					translationY="sm:-translate-y-1/4 translate-y-1/4"
 					other=""
 				></Vinyl>
-
-				<GradientBG
-					color="green"
-					height="h-800"
-					flipped={true}
-					opacity="opacity-60"
-					translateY="-translate-y-2/4 top-0"
-				></GradientBG>
 
 				<PageTitle title="Get in touch" classes="max-w-5xl px-4"></PageTitle>
 
@@ -44,9 +52,7 @@ export default function contact() {
 				></GradientBG>
 
 				<Map></Map>
-
-				<Footer></Footer>
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	);
 }

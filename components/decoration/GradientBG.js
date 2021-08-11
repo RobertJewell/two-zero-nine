@@ -1,4 +1,13 @@
 import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
+const containerFade = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+	},
+};
 
 export default function GradientBG({
 	color,
@@ -11,10 +20,13 @@ export default function GradientBG({
 	const classes = "absolute w-full transform -z-10";
 	const coloring = "middleGradient--" + color;
 	return (
-		<div
+		<motion.div
+			variants={containerFade}
+			initial="initial"
+			animate="animate"
 			className={` ${classes} ${
 				flipped && "right-0 rotate-180"
 			} ${coloring} ${height} ${opacity} ${translateY} ${other}`}
-		></div>
+		></motion.div>
 	);
 }

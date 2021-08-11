@@ -1,33 +1,39 @@
 import Head from "next/head";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import FaqAccordion from "../components/FaqAccordion";
 import PageTitle from "../components/PageTitle";
 import GradientBG from "../components/decoration/GradientBG";
+import { AnimatePresence, motion } from "framer-motion";
+
+const containerFade = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.1,
+			delayChildren: 0.3,
+		},
+	},
+};
 
 export default function faq() {
 	return (
-		<div className="overflow-hidden">
-			<div className="relative">
-				<NavBar></NavBar>
-
-				<GradientBG
-					color="green"
-					height="h-800"
-					flipped={true}
-					opacity="opacity-60"
-					translateY="-translate-y-2/4 top-0"
-				></GradientBG>
-
+		<motion.div exit={{ opacity: 0 }} className="pt-20 overflow-hidden">
+			<motion.div
+				variants={containerFade}
+				initial="initial"
+				animate="animate"
+				className="relative"
+			>
 				<PageTitle
 					title="Frequently Asked Questions"
 					classes="max-w-5xl px-4"
 				></PageTitle>
 
 				<FaqAccordion></FaqAccordion>
-
-				<Footer></Footer>
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	);
 }
