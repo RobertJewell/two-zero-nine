@@ -9,7 +9,8 @@
 		"title": "Come A Little Closer",
 		"artist": "Circanineti",
 		"source": "/assets/audio-player/audio/Circanineti - Come A Little Closer.mp3",
-		"duration": 188
+		"duration": 188,
+		"explicit": true
 	},
 	{
 		"title": "Troubles",
@@ -27,7 +28,8 @@
 		"title": "Starting Over",
 		"artist": "Emily Matts",
 		"source": "/assets/audio-player/audio/Emily Matts - Starting Over.mp3",
-		"duration": 207
+		"duration": 207,
+		"explicit": true
 	},
 	{
 		"title": "Moon Light Monsters",
