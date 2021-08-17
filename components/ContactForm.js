@@ -73,7 +73,7 @@ export default function ContactForm() {
 
 	return (
 		<div className="container px-4 pb-12 mx-auto mt-20 text-white lg:max-w-5xl sm:pb-8">
-			<div className="relative flex flex-col bg-white md:flex-row rounded-2xl backdrop-blur backdrop-filter bg-opacity-5">
+			<div className="relative flex flex-col bg-white md:flex-row rounded-2xl backdrop-blur backdrop-filter bg-opacity-10">
 				<div className="flex flex-col items-center justify-start w-full p-8 bg-white md:pt-24 rounded-2xl flex-2 md:w-300 lg:w-80">
 					<h3 className="mb-6 text-2xl font-bold text-dark ">
 						Let's discuss your project:
@@ -99,7 +99,7 @@ export default function ContactForm() {
 					>
 						<motion.div
 							className="flex flex-wrap mb-6 -mx-3"
-							variants={fadeInUp}
+							// variants={fadeInUp}
 						>
 							<div className="w-full px-3 md:mb-0">
 								<label className="block mb-2 text-gray-300 " htmlFor="name">
@@ -120,7 +120,7 @@ export default function ContactForm() {
 						</motion.div>
 						<motion.div
 							className="flex flex-wrap mb-6 -mx-3"
-							variants={fadeInUp}
+							// variants={fadeInUp}
 						>
 							<div className="w-full px-3">
 								<label className="block mb-2 text-gray-300 " htmlFor="email">
@@ -141,7 +141,7 @@ export default function ContactForm() {
 						</motion.div>
 						<motion.div
 							className="flex flex-wrap mb-6 -mx-3"
-							variants={fadeInUp}
+							// variants={fadeInUp}
 						>
 							<div className="w-full px-3">
 								<label
@@ -170,7 +170,7 @@ export default function ContactForm() {
 						/>
 						<motion.div
 							className="flex flex-col justify-between sm:flex-row"
-							variants={fadeInUp}
+							// variants={fadeInUp}
 						>
 							<a
 								href="https://bit.ly/3wNkrEP"
