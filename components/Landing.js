@@ -15,7 +15,7 @@ export default function Landing() {
 				<Button
 					text="Get started"
 					type="primary"
-					width="w-36"
+					width="w-40"
 					margin="sm:mx-4"
 					link="/contact"
 					extras=""
@@ -23,7 +23,7 @@ export default function Landing() {
 				<Button
 					text="Services"
 					type="secondary"
-					width="w-36"
+					width="w-40"
 					margin="sm:mx-4"
 					link="/services"
 					extras="hidden sm:flex"

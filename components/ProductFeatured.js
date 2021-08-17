@@ -19,14 +19,14 @@ export default function ProductFeatured({ title, description }) {
 					<Button
 						text="Get started"
 						type="primary"
-						width="w-40"
+						width="w-44"
 						link="/contact"
 						margin="mt-8"
 					></Button>
 					<Button
 						text="Apple mastering"
 						type="secondary"
-						width="w-40"
+						width="w-44"
 						link="#apple_digital-masters"
 						margin="mt-4 sm:ml-8 sm:mt-8"
 					></Button>

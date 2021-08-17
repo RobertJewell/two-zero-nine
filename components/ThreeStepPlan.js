@@ -48,7 +48,7 @@ export default function ThreeStepPlan() {
 			<Button
 				text="Get started"
 				type="primary"
-				width="w-36"
+				width="w-44"
 				link="/contact"
 				margin="mt-12"
 			></Button>

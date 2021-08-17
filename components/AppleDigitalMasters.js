@@ -28,20 +28,14 @@ export default function AppleDigitalMasters() {
 						dominant medium for consuming music and as such needs to be treated
 						with utmost care and attention. We are an official Apple certified
 						mastering studio. We guarantee your music will be digitally
-						distributed to the highest possible standards.{" "}
-						<a
-							className="text-accent-shade"
-							href="https://www.apple.com/itunes/docs/apple-digital-masters.pdf"
-						>
-							Read more here
-						</a>
+						distributed to the highest possible standards.
 					</p>
 					<Button
 						text="Learn more"
 						type="secondaryDark"
-						width="w-28"
+						width="w-36"
 						margin="mt-8 mx-auto md:mx-0"
-						link="/"
+						link="https://www.apple.com/itunes/docs/apple-digital-masters.pdf"
 						extras=""
 					></Button>
 				</div>

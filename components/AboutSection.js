@@ -29,7 +29,7 @@ export default function AboutSection() {
 						<Button
 							text="Learn more"
 							type="secondaryDark"
-							width="w-28"
+							width="w-36"
 							margin="mt-8"
 							link="/about"
 							extras=" "
