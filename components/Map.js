@@ -33,7 +33,7 @@ export default function Map() {
 			></div>
 			<div className="flex justify-center">
 				<a
-					href="http://"
+					href="https://g.page/twozeroninemastering?share"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="flex items-center px-6 py-2 mt-12 text-center text-gray-900 align-middle transition-colors bg-white border-2 border-white rounded-lg hover:bg-gray-200 hover:border-gray-200"
