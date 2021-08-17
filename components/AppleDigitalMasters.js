@@ -30,14 +30,15 @@ export default function AppleDigitalMasters() {
 						mastering studio. We guarantee your music will be digitally
 						distributed to the highest possible standards.
 					</p>
-					<Button
-						text="Learn more"
-						type="secondaryDark"
-						width="w-36"
-						margin="mt-8 mx-auto md:mx-0"
-						link="https://www.apple.com/itunes/docs/apple-digital-masters.pdf"
-						extras=""
-					></Button>
+
+					<a
+						href="https://www.apple.com/itunes/docs/apple-digital-masters.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="p-2 mx-auto mt-8 text-center align-middle transition-colors border-2 rounded-lg md:mx-0 w-36 text-dark border-dark hover:bg-gray-100"
+					>
+						Learn more
+					</a>
 				</div>
 			</div>
 		</div>
