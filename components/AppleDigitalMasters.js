@@ -22,7 +22,7 @@ export default function AppleDigitalMasters() {
 						></Image>
 					</div>
 				</div>
-				<div className="flex flex-col items-center md:w-1/2 md:items-start">
+				<div className="flex flex-col items-center justify-center md:w-1/2 md:items-start">
 					<p className="mt-12 text-center text-gray-800 md:mt-0 md:text-left">
 						Digital distribution is no longer an afterthought. It is today’s
 						dominant medium for consuming music and as such needs to be treated
