@@ -1,7 +1,6 @@
 import Container from "../components/blog/container";
 import MoreStories from "../components/blog/more-stories";
 import HeroPost from "../components/blog/hero-post";
-import Header from "../components/blog/header";
 import Layout from "../components/blog/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
@@ -17,7 +16,6 @@ export default function Index({ allPosts }) {
 				</Head>
 				<div className="absolute w-screen h-screen -z-10 featureGradient"></div>
 				<Container>
-					<Header />
 					{heroPost && (
 						<HeroPost
 							title={heroPost.title}
