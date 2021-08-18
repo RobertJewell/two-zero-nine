@@ -1,6 +1,15 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 
-export default function Button({ type, link, text, width, margin, extras }) {
+export default function Button({
+	type,
+	link,
+	text,
+	width,
+	margin,
+	extras,
+	animation,
+}) {
 	const buttonType = {
 		primary:
 			"p-2 text-center align-middle transition-colors bg-white border-2 border-white text-gray-900 rounded-lg hover:bg-gray-200 hover:border-gray-200",
@@ -13,10 +22,13 @@ export default function Button({ type, link, text, width, margin, extras }) {
 
 	const classNames = `${width} ${buttonType[type]} `;
 	return (
-		<div className={`${margin} ${extras} flex flex-row justify-between`}>
+		<motion.div
+			className={`${margin} ${extras} flex flex-row justify-between`}
+			variants={animation}
+		>
 			<Link href={link} scroll={false}>
 				<a className={classNames}>{text}</a>
 			</Link>
-		</div>
+		</motion.div>
 	);
 }
