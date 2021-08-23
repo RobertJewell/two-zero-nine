@@ -1,6 +1,6 @@
 import Neve from "../public/assets/images/logos/Neve.svg";
 import Sky from "../public/assets/images/logos/Sky.svg";
-import BBC from "../public/assets/images/logos/BBC.svg";
+import BBC from "../public/assets/images/logos/bbc.svg";
 import Kerrang from "../public/assets/images/logos/kerrang.svg";
 import RadioX from "../public/assets/images/logos/radioX.svg";
 // import Showcase from "../public/assets/images/logos/Showcase.svg";
@@ -16,7 +16,7 @@ export default function BrandLogos() {
 			<div className="flex mt-12">
 				<Sky className="hidden w-32 h-16 mx-4 lg:block"></Sky>
 				<Kerrang className="w-32 h-16 mx-4"></Kerrang>
-				<BBC className="w-32 h-16 mx-4"></BBC>
+				<BBC className="w-32 h-16 py-1 mx-4"></BBC>
 			</div>
 		</div>
 	);
