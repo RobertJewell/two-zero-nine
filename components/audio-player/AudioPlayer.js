@@ -104,7 +104,7 @@ export default function AudioPlayer({
 
 	return (
 		<div className="container flex flex-col justify-center w-full px-4 mx-auto mt-12 text-dark">
-			<div className="relative flex items-center w-full max-w-3xl p-4 mx-auto bg-white rounded-lg sm:py-6 sm:px-8 ">
+			<div className="relative flex items-center w-full max-w-3xl p-4 mx-auto overflow-hidden bg-white rounded-lg sm:py-6 sm:px-8 ">
 				<div
 					style={divStyle}
 					className={`absolute left-0 h-full rounded-lg bg-accent-main opacity-20 sm:hidden`}
