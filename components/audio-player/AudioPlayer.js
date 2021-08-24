@@ -158,11 +158,12 @@ export default function AudioPlayer({
 						</div>
 						{/* progress bar */}
 						<div className="relative">
-							<div
-								style={divStyle}
-								className="absolute z-10 w-full h-2 rounded-full pointer-events-none bg-accent-main top-2"
-							></div>
-							<div className="absolute w-full h-2 bg-gray-300 rounded-full pointer-events-none top-2 "></div>
+							<div className="absolute w-full h-2 overflow-hidden bg-gray-300 rounded-full pointer-events-none top-2 ">
+								<div
+									style={divStyle}
+									className="absolute z-10 w-full h-2 rounded-full pointer-events-none bg-accent-main"
+								></div>
+							</div>
 
 							<input
 								type="range"
