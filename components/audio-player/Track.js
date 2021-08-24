@@ -6,7 +6,7 @@ export default function Track({ trackName, artist, selectTrack, explicit }) {
 			className="flex-col py-4 list-none"
 			onClick={() => selectTrack(trackName)}
 		>
-			<div className="flex p-2 px-4 transition-colors rounded-lg cursor-pointer hover:bg-gray-800">
+			<div className="flex p-2 px-4 transition-colors rounded-lg cursor-pointer hover:bg-blue-200 hover:bg-opacity-10">
 				<div className="flex-col flex-1">
 					<p className="text-lg font-bold text-white">{trackName}</p>
 					<p className="text-gray-300">{artist}</p>
