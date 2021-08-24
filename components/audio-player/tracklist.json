@@ -3,12 +3,14 @@
 		"title": "True Love Will Find You In The End",
 		"artist": "Birthmarks",
 		"source": "/assets/audio-player/audio/Birthmarks - True Love Will Find You In The End.mp3",
+		"artwork": "/assets/audio-player/images/artwork/true-love-will-find-you-in-the-end.jpeg",
 		"duration": 229
 	},
 	{
 		"title": "Come A Little Closer",
 		"artist": "Circanineti",
 		"source": "/assets/audio-player/audio/Circanineti - Come A Little Closer.mp3",
+		"artwork": "/assets/audio-player/images/artwork/come-a-little-closer.jpeg",
 		"duration": 188,
 		"explicit": true
 	},
@@ -16,18 +18,21 @@
 		"title": "Troubles",
 		"artist": "Dan Disgrace",
 		"source": "/assets/audio-player/audio/Dan Disgrace - Troubles.mp3",
+		"artwork": "/assets/audio-player/images/artwork/troubles.jpeg",
 		"duration": 177
 	},
 	{
 		"title": "Hold On",
 		"artist": "Dan Goodwright, Mani D-Whyte, Circanineti",
 		"source": "/assets/audio-player/audio/Dan Goodwright, Mani D-Whyte, Circanineti - Hold On.mp3",
+		"artwork": "/assets/audio-player/images/artwork/hold-on.jpeg",
 		"duration": 215
 	},
 	{
 		"title": "Starting Over",
 		"artist": "Emily Matts",
 		"source": "/assets/audio-player/audio/Emily Matts - Starting Over.mp3",
+		"artwork": "/assets/audio-player/images/artwork/starting-over.jpeg",
 		"duration": 207,
 		"explicit": true
 	},
@@ -35,30 +40,35 @@
 		"title": "Moon Light Monsters",
 		"artist": "Davion J",
 		"source": "/assets/audio-player/audio/Davion J - Moon Light Monsters.mp3",
+		"artwork": null,
 		"duration": 144
 	},
 	{
 		"title": "Sometimes We Can Hear The Voices",
 		"artist": "Rich Ragany & The Digressions",
 		"source": "/assets/audio-player/audio/Rich Ragany & The Digressions - Sometimes We Can Hear The Voices.mp3",
+		"artwork": "/assets/audio-player/images/artwork/sometimes-we-can-hear-the-voices.jpeg",
 		"duration": 177
 	},
 	{
 		"title": "DripTease",
 		"artist": "MONAKIS",
 		"source": "/assets/audio-player/audio/MONAKIS - DripTease.mp3",
+		"artwork": "/assets/audio-player/images/artwork/driptease.jpeg",
 		"duration": 221
 	},
 	{
 		"title": "Come With Me",
 		"artist": "Johanna Lim",
 		"source": "/assets/audio-player/audio/Johanna Lim - Come With Me.mp3",
+		"artwork": "/assets/audio-player/images/artwork/come-with-me.jpeg",
 		"duration": 172
 	},
 	{
 		"title": "This Won't Last Forever",
 		"artist": "Serotones",
 		"source": "/assets/audio-player/audio/Serotones - This Won't Last Forever.mp3",
+		"artwork": "/assets/audio-player/images/artwork/this-wont-last-forever.jpeg",
 		"duration": 231
 	},
 	{
@@ -71,6 +81,7 @@
 		"title": "Walk",
 		"artist": "We Three Kings",
 		"source": "/assets/audio-player/audio/We Three Kings - Walk.mp3",
+		"artwork": "/assets/audio-player/images/artwork/walk.jpeg",
 		"duration": 263
 	}
 ]
