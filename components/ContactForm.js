@@ -130,7 +130,7 @@ export default function ContactForm() {
 									className={`block w-full px-4 py-3 mb-2 leading-tight text-gray-800 bg-white appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
 										errors.email ? "is-invalid" : ""
 									}`}
-									type="text"
+									type="email"
 									name="email"
 									id="email"
 									autoComplete="email"
