@@ -40,7 +40,10 @@ export default function listen() {
 				<PageTitle title="Listen" classes="max-w-4xl px-4 lg:px-0"></PageTitle>
 
 				<AudioPlayer
-					albumart="/assets/images/dave-pensado.png"
+					albumart={
+						tracksJSON[currentTrack].artwork ||
+						"/assets/images/graeme-with-desk.png"
+					}
 					src={tracksJSON[currentTrack].source}
 					trackname={tracksJSON[currentTrack].title}
 					artist={tracksJSON[currentTrack].artist}
