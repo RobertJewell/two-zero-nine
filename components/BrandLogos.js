@@ -1,6 +1,6 @@
 import Neve from "../public/assets/images/logos/Neve.svg";
 import Sky from "../public/assets/images/logos/Sky.svg";
-import BBC from "../public/assets/images/logos/bbc.svg";
+import BBC from "../public/assets/images/logos/bbc1.svg";
 import Kerrang from "../public/assets/images/logos/kerrang.svg";
 import RadioX from "../public/assets/images/logos/radioX.svg";
 // import Showcase from "../public/assets/images/logos/Showcase.svg";
