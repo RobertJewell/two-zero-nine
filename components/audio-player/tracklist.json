@@ -1,25 +1,26 @@
 [
 	{
-		"title": "True Love Will Find You In The End",
-		"artist": "Birthmarks",
-		"source": "/assets/audio-player/audio/Birthmarks - True Love Will Find You In The End.mp3",
-		"artwork": "/assets/audio-player/images/artwork/true-love-will-find-you-in-the-end.jpeg",
-		"duration": 229
-	},
-	{
-		"title": "Come A Little Closer",
-		"artist": "Circanineti",
-		"source": "/assets/audio-player/audio/Circanineti - Come A Little Closer.mp3",
-		"artwork": "/assets/audio-player/images/artwork/come-a-little-closer.jpeg",
-		"duration": 188,
+		"title": "Take Up Space",
+		"artist": "Dream Nails",
+		"source": "/assets/audio-player/audio/Dream Nails - Take Up Space.mp3",
+		"artwork": "/assets/audio-player/images/artwork/take-up-space.jpeg",
+		"duration": 151,
 		"explicit": true
 	},
 	{
-		"title": "Troubles",
-		"artist": "Dan Disgrace",
-		"source": "/assets/audio-player/audio/Dan Disgrace - Troubles.mp3",
-		"artwork": "/assets/audio-player/images/artwork/troubles.jpeg",
-		"duration": 177
+		"title": "Time",
+		"artist": "Aaron G ft. Grim Sickers",
+		"source": "/assets/audio-player/audio/Aaron G ft. Grim Sickers - Time.mp3",
+		"artwork": "/assets/audio-player/images/artwork/time.jpeg",
+		"duration": 152
+	},
+	{
+		"title": "DripTease",
+		"artist": "MONAKIS",
+		"source": "/assets/audio-player/audio/MONAKIS - DripTease.mp3",
+		"artwork": "/assets/audio-player/images/artwork/driptease.jpeg",
+		"duration": 221,
+		"explicit": true
 	},
 	{
 		"title": "Hold On",
@@ -29,40 +30,32 @@
 		"duration": 215
 	},
 	{
-		"title": "Starting Over",
-		"artist": "Emily Matts",
-		"source": "/assets/audio-player/audio/Emily Matts - Starting Over.mp3",
-		"artwork": "/assets/audio-player/images/artwork/starting-over.jpeg",
-		"duration": 207,
-		"explicit": true
+		"title": "Stroke Of Luck",
+		"artist": "Urban Architects",
+		"source": "/assets/audio-player/audio/Urban Architects - Stroke Of Luck.mp3",
+		"artwork": "/assets/audio-player/images/artwork/a-stroke-of-luck.jpeg",
+		"duration": 245
 	},
 	{
-		"title": "Moon Light Monsters",
-		"artist": "Davion J",
-		"source": "/assets/audio-player/audio/Davion J - Moon Light Monsters.mp3",
-		"artwork": null,
-		"duration": 144
+		"title": "Come A Little Closer",
+		"artist": "Circanineti",
+		"source": "/assets/audio-player/audio/Circanineti - Come A Little Closer.mp3",
+		"artwork": "/assets/audio-player/images/artwork/come-a-little-closer.jpeg",
+		"duration": 188
 	},
 	{
-		"title": "Sometimes We Can Hear The Voices",
-		"artist": "Rich Ragany & The Digressions",
-		"source": "/assets/audio-player/audio/Rich Ragany & The Digressions - Sometimes We Can Hear The Voices.mp3",
-		"artwork": "/assets/audio-player/images/artwork/sometimes-we-can-hear-the-voices.jpeg",
-		"duration": 177
+		"title": "These Are Days",
+		"artist": "Flatland Kings",
+		"source": "/assets/audio-player/audio/Flatland Kings - These Are Days.mp3",
+		"artwork": "/assets/audio-player/images/artwork/these-are-the-days.jpeg",
+		"duration": 270
 	},
 	{
-		"title": "DripTease",
-		"artist": "MONAKIS",
-		"source": "/assets/audio-player/audio/MONAKIS - DripTease.mp3",
-		"artwork": "/assets/audio-player/images/artwork/driptease.jpeg",
-		"duration": 221
-	},
-	{
-		"title": "Come With Me",
-		"artist": "Johanna Lim",
-		"source": "/assets/audio-player/audio/Johanna Lim - Come With Me.mp3",
-		"artwork": "/assets/audio-player/images/artwork/come-with-me.jpeg",
-		"duration": 172
+		"title": "Come As You Are",
+		"artist": "Maria Schoeps",
+		"source": "/assets/audio-player/audio/Maria Schoeps - Come As You Are.mp3",
+		"artwork": "/assets/audio-player/images/artwork/come-as-you-are.jpeg",
+		"duration": 201
 	},
 	{
 		"title": "This Won't Last Forever",
@@ -72,10 +65,11 @@
 		"duration": 231
 	},
 	{
-		"title": "Amsterdam",
-		"artist": "RIVIA",
-		"source": "/assets/audio-player/audio/RIVIA - Amsterdam.mp3",
-		"duration": "4:02"
+		"title": "Come With Me",
+		"artist": "Johanna Lim",
+		"source": "/assets/audio-player/audio/Johanna Lim - Come With Me.mp3",
+		"artwork": "/assets/audio-player/images/artwork/come-with-me.jpeg",
+		"duration": 172
 	},
 	{
 		"title": "Walk",
@@ -83,5 +77,40 @@
 		"source": "/assets/audio-player/audio/We Three Kings - Walk.mp3",
 		"artwork": "/assets/audio-player/images/artwork/walk.jpeg",
 		"duration": 263
+	},
+	{
+		"title": "True Love Will Find You In The End",
+		"artist": "Birthmarks",
+		"source": "/assets/audio-player/audio/Birthmarks - True Love Will Find You In The End.mp3",
+		"artwork": "/assets/audio-player/images/artwork/true-love-will-find-you-in-the-end.jpeg",
+		"duration": 229
+	},
+	{
+		"title": "No One Knows",
+		"artist": "Ben Gorb",
+		"source": "/assets/audio-player/audio/Ben Gorb - No One Knows.mp3",
+		"artwork": "/assets/audio-player/images/artwork/no-one-knows.jpeg",
+		"duration": 227
+	},
+	{
+		"title": "Starting Over",
+		"artist": "Emily Matts",
+		"source": "/assets/audio-player/audio/Emily Matts - Starting Over.mp3",
+		"artwork": "/assets/audio-player/images/artwork/starting-over.jpeg",
+		"duration": 207
+	},
+	{
+		"title": "Troubles",
+		"artist": "Dan Disgrace",
+		"source": "/assets/audio-player/audio/Dan Disgrace - Troubles.mp3",
+		"artwork": "/assets/audio-player/images/artwork/troubles.jpeg",
+		"duration": 177
+	},
+	{
+		"title": "Sometimes We Can Hear The Voices",
+		"artist": "Rich Ragany & The Digressions",
+		"source": "/assets/audio-player/audio/Rich Ragany & The Digressions - Sometimes We Can Hear The Voices.mp3",
+		"artwork": "/assets/audio-player/images/artwork/sometimes-we-can-hear-the-voices.jpeg",
+		"duration": 177
 	}
 ]
