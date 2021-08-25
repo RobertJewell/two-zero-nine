@@ -9,6 +9,7 @@ export default function Tracklist({ tracksJSON, selectTrack }) {
 						key={trackItem.title}
 						trackName={trackItem.title}
 						artist={trackItem.artist}
+						artwork={trackItem.artwork}
 						explicit={trackItem.explicit}
 						selectTrack={selectTrack}
 					></Track>
