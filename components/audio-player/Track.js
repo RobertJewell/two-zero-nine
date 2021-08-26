@@ -1,5 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const fadeIn = {
+	visible: { opacity: 1 },
+	hidden: { opacity: 0 },
+};
 
 export default function Track({
 	trackName,
@@ -9,8 +15,9 @@ export default function Track({
 	artwork,
 }) {
 	return (
-		<li
+		<motion.li
 			className="flex-col py-4 list-none"
+			variants={fadeIn}
 			onClick={() => selectTrack(trackName)}
 		>
 			<div className="flex p-2 px-4 transition-colors rounded-lg cursor-pointer hover:bg-blue-200 group hover:bg-opacity-10">
@@ -37,6 +44,6 @@ export default function Track({
 					</div>
 				)}
 			</div>
-		</li>
+		</motion.li>
 	);
 }

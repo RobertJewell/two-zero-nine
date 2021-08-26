@@ -13,11 +13,23 @@ export default function Landing() {
 					y: 0,
 					opacity: 1,
 				}}
-				transition={{ duration: 0.3 }}
+				transition={{ delay: 0.4, duration: 0.4 }}
 			>
 				Your <br className="sm:hidden" /> sound:
 				<br />
-				<span className="text-accent-main">Perfected</span>
+				<motion.span
+					className="text-accent-main"
+					initial={{
+						opacity: 0,
+					}}
+					animate={{
+						y: 0,
+						opacity: 1,
+					}}
+					transition={{ delay: 0.8, duration: 0.4 }}
+				>
+					Perfected
+				</motion.span>
 			</motion.h1>
 			<motion.h3
 				className="pt-4 sm:text-center"
@@ -28,7 +40,7 @@ export default function Landing() {
 					y: 0,
 					opacity: 1,
 				}}
-				transition={{ delay: 0.4, duration: 0.4 }}
+				transition={{ delay: 1.4, duration: 0.4 }}
 			>
 				Audio mastering in the heart of Liverpool.
 			</motion.h3>
@@ -41,7 +53,7 @@ export default function Landing() {
 					y: 0,
 					opacity: 1,
 				}}
-				transition={{ delay: 0.8, duration: 0.4 }}
+				transition={{ delay: 1.4, duration: 0.4 }}
 			>
 				<Button
 					text="Get started"

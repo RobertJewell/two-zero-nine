@@ -17,7 +17,7 @@ export default function BrandLogos() {
 				y: 0,
 				opacity: 1,
 			}}
-			transition={{ delay: 1, duration: 1 }}
+			transition={{ delay: 1.6, duration: 1 }}
 		>
 			<div className="flex mt-12">
 				<Neve className="w-32 h-16 mx-4"></Neve>
