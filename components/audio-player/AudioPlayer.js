@@ -119,7 +119,7 @@ export default function AudioPlayer({
 				></audio>
 
 				{/* Play pause */}
-				<div className="relative z-10 w-24 h-24 sm:h-36 sm:w-36 sm:m-0">
+				<div className="relative z-10 w-24 h-24 rounded-lg shadow-md sm:h-36 sm:w-36 sm:m-0">
 					<button
 						onClick={togglePlayPause}
 						className="absolute z-20 flex items-center justify-center w-full h-full p-4 sm:p-0"
@@ -133,7 +133,7 @@ export default function AudioPlayer({
 					<div className="absolute z-10 w-full h-full bg-gray-700 rounded-lg opacity-50"></div>
 
 					<Image
-						className="absolute w-full h-full rounded-lg"
+						className="absolute w-full h-full rounded-lg "
 						src={albumart}
 						alt="Testamonial picture"
 						width={256}
