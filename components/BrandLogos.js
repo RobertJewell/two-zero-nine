@@ -5,19 +5,19 @@ import Kerrang from "../public/assets/images/logos/kerrang.svg";
 import RadioX from "../public/assets/images/logos/radioX.svg";
 // import Showcase from "../public/assets/images/logos/Showcase.svg";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function BrandLogos() {
+	const [ref, inView] = useInView({
+		triggerOnce: true,
+		rootMargin: "100px 0px",
+	});
 	return (
 		<motion.div
 			className="flex flex-col items-center justify-center w-full mt-12 sm:flex-row"
-			initial={{
-				opacity: 0,
-			}}
-			animate={{
-				y: 0,
-				opacity: 1,
-			}}
-			transition={{ delay: 1.6, duration: 1 }}
+			ref={ref}
+			animate={{ opacity: inView ? 1 : 0 }}
+			transition={{ delay: 1.2, duration: 1 }}
 		>
 			<div className="flex mt-12">
 				<Neve className="w-32 h-16 mx-4"></Neve>
