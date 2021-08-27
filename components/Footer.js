@@ -30,13 +30,29 @@ export default function Footer() {
 						extras="sm:self-end"
 					></Button>
 					<div className="flex mt-6 sm:mt-8 sm:pr-1 sm:self-end">
-						<Link href="/blog">
-							<a className="font-bold text-gray-300 hover:text-accent-muted">
-								<p>Read the blog</p>
+						<Link
+							href="/documents/Two-Zero-Nine-Website-privacy-policy-GDPR-compliant.pdf"
+							target="_blank"
+							alt="link to the site privacy policy"
+							rel="noopener noreferrer"
+						>
+							<a className="text-gray-400 transition-colors hover:text-accent-muted">
+								<p>Privacy Policy </p>
+							</a>
+						</Link>
+						<p className="mx-2 text-gray-400">/</p>
+						<Link
+							href="/documents/Two-Zero-Nine-Terms-of-Service.pdf"
+							target="_blank"
+							alt="link to the site terms of service"
+							rel="noopener noreferrer"
+						>
+							<a className="text-gray-400 transition-colors hover:text-accent-muted">
+								<p>Terms of Service</p>
 							</a>
 						</Link>
 					</div>
-					<div className="flex mt-8 mb-2">
+					<div className="flex mt-8 mb-2 sm:self-end">
 						<Link href="https://twitter.com/Twozeronineuk">
 							<a>
 								<TwitterLogo className="h-8 mx-3 text-white transition-colors fill-current sm:ml-6 sm:mr-0 hover:text-accent-muted"></TwitterLogo>
