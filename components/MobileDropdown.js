@@ -62,7 +62,7 @@ export default function MyDropdown() {
 					<AnimatePresence>
 						{open && (
 							<motion.div
-								className="fixed top-0 left-0 z-20 flex items-start justify-end w-full h-screen bg-dark bg-opacity-60 backdrop-filter backdrop-blur-lg"
+								className="fixed top-0 left-0 z-30 flex items-start justify-end w-full h-screen bg-dark bg-opacity-60 backdrop-filter backdrop-blur-lg"
 								variants={fadeIn}
 								initial="hidden"
 								animate="visible"
