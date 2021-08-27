@@ -1,15 +1,8 @@
-import Vinyl from "../components/decoration/Vinyl";
+
 
 export default function Custom404 () {
     return (
         <div className="pt-20 overflow-hidden">
-            <Vinyl
-					width="w-600 md:w-800"
-					scale="scale-150"
-					rotation="rotate-90 sm:-rotate-90"
-					translationX="translate-x-2/4  sm:-translate-x-2/4  "
-					translationY="sm:-translate-y-2/4"
-				></Vinyl>
             <div className="relative py-16 grid place-content-center text-center">
                 
                 <h1 className="text-accent-main font-bold">404 ERROR</h1>
