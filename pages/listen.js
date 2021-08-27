@@ -4,6 +4,7 @@ import PageTitle from "../components/PageTitle";
 import AudioPlayer from "../components/audio-player/AudioPlayer";
 import tracksJSON from "../components/audio-player/tracklist.json";
 import Tracklist from "../components/audio-player/Tracklist";
+import Playlists from "../components/audio-player/Playlists";
 import { AnimatePresence, motion } from "framer-motion";
 
 const containerFade = {
@@ -62,6 +63,8 @@ export default function listen() {
 					tracksJSON={tracksJSON}
 					selectTrack={selectTrack}
 				></Tracklist>
+
+				<Playlists></Playlists>
 			</motion.div>
 		</motion.div>
 	);
