@@ -13,11 +13,10 @@ export default function ThreeStepPlan() {
 			</p>
 			<ThreeStepPlanPoint number="1" title="Send us your music" classes="mt-12">
 				<p className="max-w-sm mt-4 leading-6 text-gray-200">
-					Our engineer will take a listen to your mix. During this mix check
-					session we’ll discuss if we think there are elements in your mix which
-					could be adjusted slightly in order to get a better master. This is
-					completely normal and always helps us get better results for you and
-					your music!
+					To get started, just send us your music! We start the mastering
+					process the same way for everyone, whether you’re an independent
+					artist or from a major label – we will listen to your audio and make
+					sure everything is ready for mastering.
 				</p>
 			</ThreeStepPlanPoint>
 			<ThreeStepPlanPoint
@@ -27,10 +26,8 @@ export default function ThreeStepPlan() {
 			>
 				<p className="max-w-sm mt-4 leading-6 text-gray-200">
 					We will make a bespoke plan for your music. We’ll discuss things like
-					how you want it to sound, where & when you’re going to release it, if
-					you have any reference tracks or test-masters you’d like us to use.
-					This can be done either via an arranged call back or over email –
-					whatever suits you best!
+					how you want it to sound, where & when you’re going to release it, and
+					if you have any reference tracks or test-masters you’d like us to use.
 				</p>
 			</ThreeStepPlanPoint>
 			<ThreeStepPlanPoint

@@ -31,7 +31,7 @@ const faqs = [
 	{
 		question: "What analogue equipment do you use?",
 		answer:
-			"We use a combination of tubes, transformers and other class-A equipment: HCL Thermos Mastering EQ, HCL Varis Tube compressor, Custom Sontec 250 clone, Elysia Xpressor VCA compressor and Kii Three monitors to name a few! We also use Prism converters for excellent monitoring",
+			"We use a combination of tubes, transformers and other class-A equipment: HCL Thermos Mastering EQ, HCL Varis Tube compressor, Custom Sontec 250, Elysia Xpressor VCA compressor and Kii Three monitors to name a few! We also use Prism converters for excellent monitoring",
 	},
 	{
 		question: "What kind of plugins do you use?",

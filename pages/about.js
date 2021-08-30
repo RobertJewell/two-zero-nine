@@ -68,17 +68,17 @@ export default function services() {
 							mastering services.
 						</p>
 						<p className="z-20 pt-6">
-							“People always ask me why I got into mastering. For me, it’s such
-							an important process. After I hand the music back, it goes
-							straight online, in stores and to the fans. There’s no room for
-							error and it is a big responsibility. I love working with bands
-							and artists because I am able to help them deliver the perfect
-							master to their fans. There’s no better feeling than handing back
-							a track to an artist or band and them being so happy that their
-							creation, their art, is finally ready for their fans. Having my
-							own studio is the icing on the cake as it gives me a listening
-							space that I know so well. I’m looking forward to helping you
-							finish your next project!”
+							"People ask me why I chose a career in mastering. For me, it’s
+							simple. I love music. You can’t do this job otherwise. You need to
+							have a great understanding of music, and musicians. I used to be a
+							musician, so I understand the importance of getting this right!
+							The mastering process is so important. Once I’ve finished with a
+							track, it usually goes straight online or to the distribution
+							plant. There is no room for error, and I love the challenge of
+							making everything sound as good as it possibly can be. It’s always
+							such an honour to be serving musicians and helping them deliver
+							their vision, art and creations to their fans. I’m looking forward
+							to helping you finish your next project!"
 						</p>
 						<p className="pt-6">
 							As well as working as a mastering engineer, Graeme also finds time

@@ -79,11 +79,10 @@ export default function ContactForm() {
 						Let's discuss your project:
 					</h3>
 					<p className="leading-6 text-gray-700">
-						Our studio is open Monday – Friday 10am until 6pm. We aim to respond
-						to all enquiries within 24 hours. If you haven’t had a response from
-						us, please check your spam/other folders just in case! If you would
-						like a call back, either by telephone (UK) or by video call, please
-						leave your details when sending the message over.
+						Our studio is open from 10am until 6pm. We aim to respond to all
+						enquiries within 24 hours. <br /> If you would like a call back,
+						either by telephone (UK) or by video call, please leave your details
+						when sending the message over.
 					</p>
 				</div>
 				<div className="relative w-full max-w-lg mx-auto md:flex-1">

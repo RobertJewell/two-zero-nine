@@ -76,9 +76,9 @@ export default function services() {
 						description="In a hurry? Just let us know and we can arrange for a quick turn around to suit your schedule."
 					></OptionsItem>
 					<OptionsItem
-						title="Radio Edits"
-						key="Radio Edits"
-						description="Same mastering quality, tweaked to your needs."
+						title="Alternative Sets"
+						key="Alternative Sets"
+						description="Radio edits, instrumentals, other versions for physical/digital release: Same mastering quality, tweaked to your needs"
 					></OptionsItem>
 					<OptionsItem
 						title="Mixing"
