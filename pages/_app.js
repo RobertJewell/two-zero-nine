@@ -2,11 +2,20 @@ import "../styles/globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { AnimatePresence, motion } from "framer-motion";
+import SEO from "@bradgarropy/next-seo";
 import GradientBG from "../components/decoration/GradientBG";
 
 function MyApp({ Component, pageProps, router }) {
 	return (
 		<>
+			<SEO
+				title="Two Zero Nine Mastering | Professional Audio Mastering, Liverpool"
+				description="Mastering solutions for musicians, labels and studio's around the world from our dedicated studio in Liverpool."
+				keywords={[
+					"Mastering, Mastering studio, Mastering services, Audio Mastering, Mixing and Mastering, Liverpool",
+				]}
+				icon="/favicon.png"
+			/>
 			<NavBar></NavBar>
 			{router.route !== "/" && (
 				<GradientBG
