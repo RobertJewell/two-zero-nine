@@ -10,9 +10,6 @@ export default function Index({ allPosts }) {
 	return (
 		<>
 			<Layout>
-				<Head>
-					<title>TwoZeroNine Mastering - Blog</title>
-				</Head>
 				<div className="absolute w-screen h-screen -z-10 featureGradient"></div>
 				<Container>
 					{heroPost && (
