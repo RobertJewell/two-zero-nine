@@ -179,6 +179,7 @@ export default function ContactForm() {
 								Upload your audio
 							</a>
 							<button
+								aria-label="Submit form"
 								className="w-full p-2 mt-8 text-center text-gray-900 align-middle transition-colors bg-white border-2 border-white rounded-lg sm:mt-0 sm:w-36 hover:bg-gray-200 hover:border-gray-200"
 								type="submit"
 							>

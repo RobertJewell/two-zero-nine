@@ -121,6 +121,7 @@ export default function AudioPlayer({
 				{/* Play pause */}
 				<div className="relative z-10 w-24 h-24 rounded-lg shadow-md sm:h-36 sm:w-36 sm:m-0">
 					<button
+						aria-label="Play Audio"
 						onClick={togglePlayPause}
 						className="absolute z-20 flex items-center justify-center w-full h-full p-4 sm:p-0"
 					>
