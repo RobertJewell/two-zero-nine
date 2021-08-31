@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps, router }) {
 				keywords={[
 					"Mastering, Mastering studio, Mastering services, Audio Mastering, Mixing and Mastering, Liverpool",
 				]}
-				icon="/favicon.png"
+				icon="/favicon-32x32.png"
 			/>
 			<NavBar></NavBar>
 			{router.route !== "/" && (
