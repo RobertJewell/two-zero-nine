@@ -1,4 +1,3 @@
-import Head from "next/head";
 import FaqAccordion from "../components/FaqAccordion";
 import PageTitle from "../components/PageTitle";
 import GradientBG from "../components/decoration/GradientBG";

@@ -1,6 +1,3 @@
-import Head from "next/head";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import GradientBG from "../components/decoration/GradientBG";
 import PageTitle from "../components/PageTitle";
 import ProductFeatured from "../components/ProductFeatured";

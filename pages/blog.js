@@ -3,7 +3,6 @@ import MoreStories from "../components/blog/more-stories";
 import HeroPost from "../components/blog/hero-post";
 import Layout from "../components/blog/layout";
 import { getAllPosts } from "../lib/api";
-import Head from "next/head";
 
 export default function Index({ allPosts }) {
 	const heroPost = allPosts[0];

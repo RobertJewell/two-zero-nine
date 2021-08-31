@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Landing from "../components/Landing";
 import BrandLogos from "../components/BrandLogos";
 import AboutSection from "../components/AboutSection";

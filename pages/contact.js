@@ -1,4 +1,3 @@
-import Head from "next/head";
 import PageTitle from "../components/PageTitle";
 import GradientBG from "../components/decoration/GradientBG";
 import ContactForm from "../components/ContactForm";
