@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps, router }) {
 				<link
 					rel="mask-icon"
 					href="/assets/meta/safari-pinned-tab.svg"
-					color="#0a0e15"
+					color="#2AEDDD"
 				/>
 				<meta name="msapplication-TileColor" content="#00aba9" />
 				<meta name="theme-color" content="#0a0e15" />
