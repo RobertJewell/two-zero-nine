@@ -20,22 +20,26 @@ function MyApp({ Component, pageProps, router }) {
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
-					href="/apple-touch-icon.png"
+					href="/assets/meta/apple-touch-icon.png"
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="32x32"
-					href="/favicon-32x32.png"
+					href="/assets/meta/favicon-32x32.png"
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="16x16"
-					href="/favicon-16x16.png"
+					href="/assets/meta/favicon-16x16.png"
 				/>
-				<link rel="manifest" href="/site.webmanifest" />
-				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a0e15" />
+				<link rel="manifest" href="/assets/meta/site.webmanifest" />
+				<link
+					rel="mask-icon"
+					href="/assets/meta/safari-pinned-tab.svg"
+					color="#0a0e15"
+				/>
 				<meta name="msapplication-TileColor" content="#00aba9" />
 				<meta name="theme-color" content="#0a0e15" />
 			</Head>
