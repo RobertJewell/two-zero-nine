@@ -42,6 +42,17 @@ function MyApp({ Component, pageProps, router }) {
 				/>
 				<meta name="msapplication-TileColor" content="#00aba9" />
 				<meta name="theme-color" content="#0a0e15" />
+				<meta property="og:type" content="website" />
+				<meta
+					property="og:title"
+					content="Two Zero Nine Mastering | Audio Mastering in Liverpool"
+				/>
+				<meta property="og:url" content="https://www.twozeronine.co.uk" />
+				<meta property="og:image" content="/assets/meta/opengraph.jpg" />
+				<meta
+					property="og:description"
+					content="Mastering solutions for musicians, labels and studios around the world from our dedicated studio in Liverpool."
+				/>
 			</Head>
 			<NavBar></NavBar>
 			{router.route !== "/" && (
