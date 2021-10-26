@@ -76,12 +76,12 @@ const faqs = [
 	{
 		question: "What if I’m not happy with my master or audio results?",
 		answer:
-			"We’re more than confident you’ll be happy with the end result. If you aren’t, then we offer a unlimited revisions to ensure we’re both happy with the end result.",
+			"We’re more than confident you’ll be happy with the end result. If you aren’t, then we offer revisions to ensure we’re both happy with the end result.",
 	},
 	{
 		question: "How many revisions do you offer?",
 		answer:
-			"Unlimited revisions are offered. We’re happy to tweak the track until we’re both satisfied with the outcome. This usually covers any adjustments that allow for personal and artistic taste. For any major changes/issues, we’d normally refer you back to your mix engineer before we continue.",
+			"2 revisions per track are offered. Additional revisions are chargeable (per hour/revision). We’re happy to tweak the track until we’re both satisfied with the outcome. This usually covers any adjustments that allow for personal and artistic taste. For any major changes/issues, we’d normally refer you back to your mix engineer before we continue.",
 	},
 	{
 		question: "Do you master MP3’s?",
