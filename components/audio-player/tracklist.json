@@ -15,6 +15,20 @@
 		"duration": 152
 	},
 	{
+		"title": "Nice T-shirt",
+		"artist": "Voodoo Bandits",
+		"source": "/assets/audio-player/audio/Voodoo Bandits - Nice T-Shirt.mp3",
+		"artwork": "/assets/audio-player/images/artwork/nice-t-shirt.jpeg",
+		"duration": 167
+	},
+	{
+		"title": "Feelin’",
+		"artist": "Tom Braithewait",
+		"source": "/assets/audio-player/audio/Tom Braithewait - Feelin'.mp3",
+		"artwork": "/assets/audio-player/images/artwork/feelin.jpeg",
+		"duration": 160
+	},
+	{
 		"title": "DripTease",
 		"artist": "MONAKIS",
 		"source": "/assets/audio-player/audio/MONAKIS - DripTease.mp3",
@@ -28,6 +42,20 @@
 		"source": "/assets/audio-player/audio/Dan Goodwright, Mani D-Whyte, Circanineti - Hold On.mp3",
 		"artwork": "/assets/audio-player/images/artwork/hold-on.jpeg",
 		"duration": 215
+	},
+	{
+		"title": "Midnight Monsters",
+		"artist": "Davion J",
+		"source": "/assets/audio-player/audio/Davion J - Moon Light Monsters.mp3",
+		"artwork": "/assets/audio-player/images/artwork/midnight-monsters.jpeg",
+		"duration": 144
+	},
+	{
+		"title": "Calendar Queen",
+		"artist": "Electric Black",
+		"source": "/assets/audio-player/audio/Electric Black - Calendar Queen.mp3",
+		"artwork": "/assets/audio-player/images/artwork/calendar-queen.jpeg",
+		"duration": 258
 	},
 	{
 		"title": "Stroke Of Luck",
@@ -44,11 +72,18 @@
 		"duration": 188
 	},
 	{
-		"title": "These Are Days",
-		"artist": "Flatland Kings",
-		"source": "/assets/audio-player/audio/Flatland Kings - These Are Days.mp3",
-		"artwork": "/assets/audio-player/images/artwork/these-are-the-days.jpeg",
-		"duration": 270
+		"title": "Sober",
+		"artist": "TSUAVE",
+		"source": "/assets/audio-player/audio/TSUAVE - Sober.mp3",
+		"artwork": "/assets/audio-player/images/artwork/sober.jpeg",
+		"duration": 193
+	},
+	{
+		"title": "Summer of 69",
+		"artist": "Flowers Of Evil",
+		"source": "/assets/audio-player/audio/Flowers Of Evil - SO69.mp3",
+		"artwork": "/assets/audio-player/images/artwork/summer-of-69.jpeg",
+		"duration": 307
 	},
 	{
 		"title": "Come As You Are",
@@ -58,11 +93,11 @@
 		"duration": 201
 	},
 	{
-		"title": "This Won't Last Forever",
-		"artist": "Serotones",
-		"source": "/assets/audio-player/audio/Serotones - This Won't Last Forever.mp3",
-		"artwork": "/assets/audio-player/images/artwork/this-wont-last-forever.jpeg",
-		"duration": 231
+		"title": "Why’d You Still Come See Me?",
+		"artist": "Voodoos",
+		"source": "/assets/audio-player/audio/Voodoos - Why'd You Still Come See Me.mp3",
+		"artwork": "/assets/audio-player/images/artwork/whyd-you-still-come-see-me.jpeg",
+		"duration": 159
 	},
 	{
 		"title": "Come With Me",
@@ -72,11 +107,11 @@
 		"duration": 172
 	},
 	{
-		"title": "Walk",
-		"artist": "We Three Kings",
-		"source": "/assets/audio-player/audio/We Three Kings - Walk.mp3",
-		"artwork": "/assets/audio-player/images/artwork/walk.jpeg",
-		"duration": 263
+		"title": "This Won't Last Forever",
+		"artist": "Serotones",
+		"source": "/assets/audio-player/audio/Serotones - This Won't Last Forever.mp3",
+		"artwork": "/assets/audio-player/images/artwork/this-wont-last-forever.jpeg",
+		"duration": 231
 	},
 	{
 		"title": "True Love Will Find You In The End",
@@ -98,13 +133,6 @@
 		"source": "/assets/audio-player/audio/Emily Matts - Starting Over.mp3",
 		"artwork": "/assets/audio-player/images/artwork/starting-over.jpeg",
 		"duration": 207
-	},
-	{
-		"title": "Troubles",
-		"artist": "Dan Disgrace",
-		"source": "/assets/audio-player/audio/Dan Disgrace - Troubles.mp3",
-		"artwork": "/assets/audio-player/images/artwork/troubles.jpeg",
-		"duration": 177
 	},
 	{
 		"title": "Sometimes We Can Hear The Voices",
