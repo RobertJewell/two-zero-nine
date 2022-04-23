@@ -2,12 +2,12 @@ import Container from "../components/blog/container";
 import MoreStories from "../components/blog/more-stories";
 import HeroPost from "../components/blog/hero-post";
 import Layout from "../components/blog/layout";
-import { getAllPosts } from "../lib/api";
+import { createClient } from "contentful";
 import Head from "next/head";
 
-export default function Index({ allPosts }) {
-	const heroPost = allPosts[0];
-	const morePosts = allPosts.slice(1);
+export default function Index({ posts }) {
+	const heroPost = posts[0];
+	const morePosts = posts.slice(1);
 	return (
 		<>
 			<Layout>
@@ -18,12 +18,10 @@ export default function Index({ allPosts }) {
 				<Container>
 					{heroPost && (
 						<HeroPost
-							title={heroPost.title}
-							coverImage={heroPost.coverImage}
-							date={heroPost.date}
-							author={heroPost.author}
-							slug={heroPost.slug}
-							excerpt={heroPost.excerpt}
+							title={heroPost.fields.title}
+							coverImage={heroPost.fields.featureImage.fields.file.url}
+							slug={heroPost.fields.slug}
+							excerpt={heroPost.fields.excerpt}
 						/>
 					)}
 					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
@@ -34,16 +32,12 @@ export default function Index({ allPosts }) {
 }
 
 export async function getStaticProps() {
-	const allPosts = getAllPosts([
-		"title",
-		"date",
-		"slug",
-		"author",
-		"coverImage",
-		"excerpt",
-	]);
+	const client = createClient({
+		space: process.env.CONTENFUL_SPACE,
+		accessToken: process.env.CONTENTFUL_API_KEY,
+	});
 
-	return {
-		props: { allPosts },
-	};
+	const res = await client.getEntries({ content_type: "post" });
+
+	return { props: { posts: res.items } };
 }

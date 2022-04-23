@@ -71,7 +71,6 @@ function MyApp({ Component, pageProps, router }) {
 				onExitComplete={() => window.scrollTo(0, 0)}
 			>
 				<Component {...pageProps} key={router.route} />
-				{console.log(router.route)}
 			</AnimatePresence>
 			<Footer></Footer>
 		</>
