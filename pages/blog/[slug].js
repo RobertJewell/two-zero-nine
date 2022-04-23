@@ -29,8 +29,8 @@ const client = createClient({
 });
 
 export default function Post({ post }) {
-	const { title, featureImage, contentBlock } = post.fields;
-	console.log(contentBlock);
+	const { title, featureImage, content } = post.fields;
+	console.log(content);
 	return (
 		<Layout>
 			<Container>
@@ -42,8 +42,8 @@ export default function Post({ post }) {
 						title={title}
 						coverImage={"https:" + featureImage.fields.file.url}
 					/>
-					<div className="mx-auto prose text-gray-200">
-						{documentToReactComponents(contentBlock, options)}
+					<div className="mx-auto prose text-gray-200 prose-invert">
+						{documentToReactComponents(content, options)}
 					</div>
 				</article>
 			</Container>
