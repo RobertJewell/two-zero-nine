@@ -29,8 +29,7 @@ const client = createClient({
 });
 
 export default function Post({ post }) {
-	const { title, featureImage, content } = post.fields;
-	console.log(content);
+	const { title, featureImage, content, excerpt } = post.fields;
 	return (
 		<Layout>
 			<Container>
@@ -38,11 +37,23 @@ export default function Post({ post }) {
 					<Head>
 						<title>{title} | Mastering, Music, and More</title>
 					</Head>
-					<PostHeader
-						title={title}
-						coverImage={"https:" + featureImage.fields.file.url}
-					/>
 					<div className="mx-auto prose text-gray-200 prose-invert">
+						<PostHeader
+							title={title}
+							excerpt={excerpt}
+							coverImage={"https:" + featureImage.fields.file.url}
+						/>
+						{post.fields.spotifyPlayer && (
+							<iframe
+								className="mb-12"
+								src={post.fields.spotifyPlayer}
+								width="100%"
+								height="80"
+								frameBorder="0"
+								allowtransparency="true"
+								allow="encrypted-media"
+							></iframe>
+						)}
 						{documentToReactComponents(content, options)}
 					</div>
 				</article>
