@@ -5,7 +5,7 @@ import Button from "../Button";
 
 export default function PostPreview({ title, coverImage, excerpt, slug }) {
 	return (
-		<div className="flex flex-col items-center mx-auto sm:flex-row w-400 sm:w-auto">
+		<div className="flex flex-col items-center mx-auto sm:flex-row max-w-400 sm:max-w-screen-2xl sm:w-auto">
 			<div className="w-full sm:mr-8 sm:w-1/2 sm:max-w-300">
 				<CoverImage
 					slug={slug}
@@ -16,12 +16,12 @@ export default function PostPreview({ title, coverImage, excerpt, slug }) {
 				/>
 			</div>
 			<div className="flex flex-col mt-8 sm:mt-0 sm:w-1/2">
-				<h3 className="mb-3 text-3xl font-bold leading-snug">
+				<h3 className="mb-3 text-3xl font-bold leading-snug sm:text-2xl md:text-3xl">
 					<Link as={`/blog/${slug}`} href="/blog/[slug]">
 						<a className="hover:underline">{title}</a>
 					</Link>
 				</h3>
-				<p className="mb-4 text-lg leading-relaxed">
+				<p className="mb-4 text-lg leading-relaxed text-gray-300 sm:text-base md:text-lg">
 					{documentToReactComponents(excerpt)}
 				</p>
 				<Button

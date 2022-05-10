@@ -3,10 +3,22 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "../Button";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { AnimatePresence, motion } from "framer-motion";
+
+const fadeIn = {
+	initial: { opacity: 0 },
+	animate: { opacity: 1 },
+	transition: { duration: 0.8 },
+};
 
 export default function HeroPost({ title, coverImage, slug, excerpt }) {
 	return (
-		<section className="mt-12 mb-12 ">
+		<motion.section
+			variants={fadeIn}
+			initial="initial"
+			animate="animate"
+			className="mt-12 mb-12"
+		>
 			<h2 className="mb-2 text-6xl font-bold ">Blog</h2>
 			<div className="container relative flex flex-col justify-center w-full mx-auto mt-16 sm:mt-8 lg:max-w-3xl text-dark">
 				<div className="z-10 sm:absolute md:max-w-sm sm:max-w-xs">
@@ -55,6 +67,6 @@ export default function HeroPost({ title, coverImage, slug, excerpt }) {
 					</div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }
