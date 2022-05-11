@@ -6,7 +6,7 @@ import MobileDropdown from "./MobileDropdown";
 const NavBar = () => {
 	return (
 		<div className="container z-30 flex px-4 mx-auto md:justify-center">
-			<div className="absolute flex flex-row items-center justify-between h-20 mx-auto md:hidden">
+			<div className="absolute z-30 flex flex-row items-center justify-between h-20 mx-auto md:hidden">
 				<Link href="/">
 					<a className="w-24 pr-6 text-center">
 						<TwoZeroNineLogo></TwoZeroNineLogo>
