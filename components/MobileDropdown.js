@@ -9,6 +9,7 @@ const links = [
 	{ name: "About", link: "/about" },
 	{ name: "Listen", link: "/listen" },
 	{ name: "FAQ", link: "/faq" },
+	{ name: "Blog", link: "/blog" },
 	{ name: "Contact", link: "/contact" },
 ];
 
@@ -89,7 +90,7 @@ export default function MyDropdown() {
 													<a
 														className={`${
 															active && "text-accent-main"
-														} w-full p-8 py-6 text-right transition-colors hover:text-accent-main`}
+														} w-full p-8 py-5 text-right transition-colors hover:text-accent-main`}
 													>
 														{link.name}
 													</a>
