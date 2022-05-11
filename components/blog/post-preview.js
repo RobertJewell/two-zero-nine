@@ -5,7 +5,7 @@ import Button from "../Button";
 
 export default function PostPreview({ title, coverImage, excerpt, slug }) {
 	return (
-		<div className="flex flex-col items-center mx-auto sm:flex-row max-w-400 sm:max-w-screen-2xl sm:w-auto">
+		<div className="flex flex-col items-center sm:flex-row max-w-400 sm:max-w-screen-2xl sm:w-auto">
 			<div className="w-full sm:mr-8 sm:w-1/2 sm:max-w-300">
 				<CoverImage
 					slug={slug}
