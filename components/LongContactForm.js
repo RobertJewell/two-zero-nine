@@ -26,6 +26,9 @@ export default function ContactForm() {
 		email: Yup.string().required("Email is required").email("Email is invalid"),
 		address: Yup.string().required("This is required for the invoice"),
 		message: Yup.string().required("Message is required"),
+		terms: Yup.string().required(
+			"Please read and agree to the privacy policy and terms"
+		),
 	});
 	const formOptions = { resolver: yupResolver(validationSchema) };
 
@@ -87,10 +90,10 @@ export default function ContactForm() {
 						onSubmit={handleSubmit(onSubmit)}
 					>
 						<div className="flex flex-col md:flex-row">
-							<div className="flex flex-col md:mr-6 flex-1">
+							<div className="flex flex-col md:mr-8 flex-1">
 								<h2 className="text-3xl mb-4 font-bold">About me</h2>
 								<p className="text-gray-300 mb-6">
-									Just the basics, so I can contact you back!
+									Just the basics, so we can contact you back!
 								</p>
 							</div>
 							<div className="flex flex-col mb-4 flex-[2_2_0%]">
@@ -125,7 +128,7 @@ export default function ContactForm() {
 										</label>
 										<input
 											className={`block w-full px-4 py-3 mb-2 leading-tight text-gray-800 bg-white  appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main  ${
-												errors.name ? "is-invalid" : ""
+												errors.artistname ? "is-invalid" : ""
 											}`}
 											id="artistname"
 											type="text"
@@ -175,7 +178,7 @@ export default function ContactForm() {
 										</label>
 										<textarea
 											className={`block w-full h-24 px-4 py-2 mb-2 leading-tight text-gray-800 bg-white  border-none appearance-none resize-none rounded-xl no-resize focus:outline-none focus:bg-white focus:border-accent-main focus:border-4  ${
-												errors.message ? "is-invalid" : ""
+												errors.address ? "is-invalid" : ""
 											}`}
 											id="address"
 											name="address"
@@ -190,7 +193,7 @@ export default function ContactForm() {
 						</div>
 						<div className="w-full bg-gray-600 h-0.5 mb-10" />
 						<div className="flex flex-col md:flex-row">
-							<div className="flex flex-col md:mr-6 flex-1">
+							<div className="flex flex-col md:mr-8 flex-1">
 								<h2 className="text-3xl mb-4 font-bold">About the music</h2>
 								<p className="text-gray-300 mb-6">
 									The important bits! The more info you can give me, the quicker
@@ -238,15 +241,15 @@ export default function ContactForm() {
 										</label>
 										<input
 											className={`block w-full max-w-200 px-4 py-3 mb-2 leading-tight text-gray-800 bg-white appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
-												errors.email ? "is-invalid" : ""
+												errors.deadline ? "is-invalid" : ""
 											}`}
 											type="date"
-											name="trackcount"
-											id="trackcount"
-											{...register("trackcount")}
+											name="deadline"
+											id="deadline"
+											{...register("deadline")}
 										/>
 										<div className="text-red-600">
-											{errors.trackcount?.message}
+											{errors.deadline?.message}
 										</div>
 									</div>
 								</motion.div>
@@ -259,7 +262,7 @@ export default function ContactForm() {
 											className="block mb-2 text-gray-300 "
 											htmlFor="grid-password"
 										>
-											Message (preferences, reference tracks, etc)
+											Message (preferences, reference tracks, etc)*
 										</label>
 										<textarea
 											className={`block w-full h-48 px-4 py-2 mb-2 leading-tight text-gray-800 bg-white  border-none appearance-none resize-none rounded-xl no-resize focus:outline-none focus:bg-white focus:border-accent-main focus:border-4  ${
@@ -274,34 +277,78 @@ export default function ContactForm() {
 										</div>
 									</div>
 								</motion.div>
+								<motion.div
+									className="flex flex-wrap mb-6 -mx-3"
+									// variants={fadeInUp}
+								>
+									<div className="w-full flex px-3">
+										<input
+											className={`block w-4 h-4 mt-1 mr-2 text-gray-800 bg-white rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
+												errors.terms ? "is-invalid" : ""
+											}`}
+											type="checkbox"
+											name="terms"
+											id="terms"
+											{...register("terms")}
+										/>
+										<label
+											className="block mb-2 text-gray-300 "
+											htmlFor="grid-password"
+										>
+											I agree to the{" "}
+											<a
+												href="https://www.twozeronine.co.uk/documents/Two-Zero-Nine-Terms-of-Service.pdf"
+												target="_blank"
+												rel="noopener noreferrer"
+												className="text-accent-main"
+											>
+												Terms of Service
+											</a>{" "}
+											and{" "}
+											<a
+												href="https://www.twozeronine.co.uk/documents/Two-Zero-Nine-Website-privacy-policy-GDPR-compliant.pdf"
+												target="_blank"
+												rel="noopener noreferrer"
+												className="text-accent-main"
+											>
+												Privacy Policy
+											</a>
+											*
+										</label>
+
+										<div className="text-red-600">{errors.terms?.message}</div>
+									</div>
+								</motion.div>
+								<div className="">
+									<input
+										type="checkbox"
+										name="_honeypot"
+										style={{ display: "none" }}
+										tabIndex="-1"
+										autoComplete="off"
+									/>
+									<motion.div
+										className="flex flex-col justify-between sm:flex-row"
+										// variants={fadeInUp}
+									>
+										<a
+											href="https://bit.ly/3wNkrEP"
+											target="_blank"
+											className="w-full p-2 text-center align-middle transition-colors border-2 border-gray-200 rounded-lg sm:w-48 hover:bg-gray-800"
+										>
+											Upload your audio
+										</a>
+										<button
+											aria-label="Submit form"
+											className="w-full p-2 mt-8 text-center text-gray-900 align-middle transition-colors bg-white border-2 border-white rounded-lg sm:mt-0 sm:w-36 hover:bg-gray-200 hover:border-gray-200"
+											type="submit"
+										>
+											Send
+										</button>
+									</motion.div>
+								</div>
 							</div>
 						</div>
-						<input
-							type="checkbox"
-							name="_honeypot"
-							style={{ display: "none" }}
-							tabIndex="-1"
-							autoComplete="off"
-						/>
-						<motion.div
-							className="flex flex-col justify-between sm:flex-row"
-							// variants={fadeInUp}
-						>
-							<a
-								href="https://bit.ly/3wNkrEP"
-								target="_blank"
-								className="w-full p-2 text-center align-middle transition-colors border-2 border-gray-200 rounded-lg sm:w-48 hover:bg-gray-800"
-							>
-								Upload your audio
-							</a>
-							<button
-								aria-label="Submit form"
-								className="w-full p-2 mt-8 text-center text-gray-900 align-middle transition-colors bg-white border-2 border-white rounded-lg sm:mt-0 sm:w-36 hover:bg-gray-200 hover:border-gray-200"
-								type="submit"
-							>
-								Send
-							</button>
-						</motion.div>
 					</form>
 				</div>
 			</div>
