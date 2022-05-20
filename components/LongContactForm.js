@@ -17,7 +17,7 @@ const fadeInUp = {
 	},
 };
 
-export default function ContactForm() {
+export default function LongContactForm() {
 	const [formVisibility, setFormVisibility] = useState("visible");
 
 	// form validation rules
@@ -26,20 +26,21 @@ export default function ContactForm() {
 		email: Yup.string().required("Email is required").email("Email is invalid"),
 		address: Yup.string().required("This is required for the invoice"),
 		message: Yup.string().required("Message is required"),
-		terms: Yup.string().required(
-			"Please read and agree to the privacy policy and terms"
+		terms: Yup.boolean().oneOf(
+			[true],
+			"Please read and agree to the terms and privacy policy"
 		),
 	});
 	const formOptions = { resolver: yupResolver(validationSchema) };
 
-	const FORMSPARK_FORM_ID = "ouwYE24C";
+	const FORMSPARK_FORM_ID = "LH5bZvGx";
 
 	const [submit, submitting] = useFormspark({
 		formId: FORMSPARK_FORM_ID,
 	});
 
 	const botpoison = new Botpoison({
-		publicKey: "pk_3aa5d554-b0f3-4b43-ad98-31f1b2b8ee86",
+		publicKey: "pk_b41970ba-78cd-4bca-9357-c5bb181dc442",
 	});
 
 	// get functions to build form with useForm() hook
@@ -53,10 +54,10 @@ export default function ContactForm() {
 		//run botpoison check
 		const { solution } = await botpoison.challenge();
 
-		//Replace new line characters with HTML for email
-		const messageWithBreaks = data.message.replace(/\n/g, "<br>");
-
-		await submit({ ...data, message: messageWithBreaks, _botpoison: solution });
+		await submit({
+			...data,
+			_botpoison: solution,
+		});
 
 		//update state to confirmed
 		let makeConfirmationVisible = setTimeout(() => {
@@ -65,14 +66,6 @@ export default function ContactForm() {
 
 		//reset form
 		reset();
-
-		//update state to visible after 6 seconds removing the confirmation message after 5 seconds
-		let makeNothingVisible = setTimeout(() => {
-			setFormVisibility("none");
-		}, 5000);
-		let makeFormVisible = setTimeout(() => {
-			setFormVisibility("visible");
-		}, 6500);
 	}
 
 	return (
@@ -91,7 +84,7 @@ export default function ContactForm() {
 					>
 						<div className="flex flex-col md:flex-row">
 							<div className="flex flex-col md:mr-8 flex-1">
-								<h2 className="text-3xl mb-4 font-bold">About me</h2>
+								<h2 className="text-3xl mb-4 font-bold">About you</h2>
 								<p className="text-gray-300 mb-6">
 									Just the basics, so we can contact you back!
 								</p>
@@ -214,7 +207,7 @@ export default function ContactForm() {
 										</label>
 										<input
 											className={`block w-24 px-4 py-3 mb-2 leading-tight text-gray-800 bg-white appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
-												errors.email ? "is-invalid" : ""
+												errors.trackcount ? "is-invalid" : ""
 											}`}
 											type="number"
 											name="trackcount"
@@ -240,7 +233,7 @@ export default function ContactForm() {
 											Do you have a deadline?
 										</label>
 										<input
-											className={`block w-full max-w-200 px-4 py-3 mb-2 leading-tight text-gray-800 bg-white appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
+											className={`block w-full max-w-200 px-4 h-12 mb-2 leading-tight text-gray-800 bg-white appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
 												errors.deadline ? "is-invalid" : ""
 											}`}
 											type="date"
@@ -281,52 +274,54 @@ export default function ContactForm() {
 									className="flex flex-wrap mb-6 -mx-3"
 									// variants={fadeInUp}
 								>
-									<div className="w-full flex px-3">
-										<input
-											className={`block w-4 h-4 mt-1 mr-2 text-gray-800 bg-white rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
-												errors.terms ? "is-invalid" : ""
-											}`}
-											type="checkbox"
-											name="terms"
-											id="terms"
-											{...register("terms")}
-										/>
-										<label
-											className="block mb-2 text-gray-300 "
-											htmlFor="grid-password"
-										>
-											I agree to the{" "}
-											<a
-												href="https://www.twozeronine.co.uk/documents/Two-Zero-Nine-Terms-of-Service.pdf"
-												target="_blank"
-												rel="noopener noreferrer"
-												className="text-accent-main"
+									<div className="w-full px-3">
+										<div className="flex">
+											<input
+												className={`block w-4 h-4 mt-1 mr-2 text-gray-800 bg-white rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
+													errors.terms ? "is-invalid" : ""
+												}`}
+												type="checkbox"
+												name="terms"
+												id="terms"
+												{...register("terms")}
+											/>
+											<label
+												className="block mb-2 text-gray-300 "
+												htmlFor="grid-password"
 											>
-												Terms of Service
-											</a>{" "}
-											and{" "}
-											<a
-												href="https://www.twozeronine.co.uk/documents/Two-Zero-Nine-Website-privacy-policy-GDPR-compliant.pdf"
-												target="_blank"
-												rel="noopener noreferrer"
-												className="text-accent-main"
-											>
-												Privacy Policy
-											</a>
-											*
-										</label>
+												I agree to the{" "}
+												<a
+													href="https://www.twozeronine.co.uk/documents/Two-Zero-Nine-Terms-of-Service.pdf"
+													target="_blank"
+													rel="noopener noreferrer"
+													className="text-accent-main"
+												>
+													Terms of Service
+												</a>{" "}
+												and{" "}
+												<a
+													href="https://www.twozeronine.co.uk/documents/Two-Zero-Nine-Website-privacy-policy-GDPR-compliant.pdf"
+													target="_blank"
+													rel="noopener noreferrer"
+													className="text-accent-main"
+												>
+													Privacy Policy
+												</a>
+												*
+											</label>
+										</div>
 
 										<div className="text-red-600">{errors.terms?.message}</div>
 									</div>
 								</motion.div>
+								<input
+									type="checkbox"
+									name="_honeypot"
+									style={{ display: "none" }}
+									tabIndex="-1"
+									autoComplete="off"
+								/>
 								<div className="">
-									<input
-										type="checkbox"
-										name="_honeypot"
-										style={{ display: "none" }}
-										tabIndex="-1"
-										autoComplete="off"
-									/>
 									<motion.div
 										className="flex flex-col justify-between sm:flex-row"
 										// variants={fadeInUp}
