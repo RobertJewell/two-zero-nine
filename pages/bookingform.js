@@ -39,7 +39,7 @@ export default function contact() {
 					other=""
 				></Vinyl>
 
-				<PageTitle title="Get in touch" classes="max-w-5xl px-4"></PageTitle>
+				<PageTitle title="Booking Form" classes="max-w-5xl px-4"></PageTitle>
 
 				<LongContactForm></LongContactForm>
 			</motion.div>
