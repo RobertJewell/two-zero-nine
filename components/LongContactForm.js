@@ -23,9 +23,10 @@ export default function LongContactForm() {
 	// form validation rules
 	const validationSchema = Yup.object().shape({
 		name: Yup.string().required("Name is required"),
+		artistname: Yup.string().required("This is required"),
 		email: Yup.string().required("Email is required").email("Email is invalid"),
 		address: Yup.string().required("This is required for the invoice"),
-		message: Yup.string().required("Message is required"),
+		trackcount: Yup.number().required("This is required"),
 		terms: Yup.boolean().oneOf(
 			[true],
 			"Please read and agree to the terms and privacy policy"
@@ -117,7 +118,7 @@ export default function LongContactForm() {
 								>
 									<div className="w-full px-3 md:mb-0">
 										<label className="block mb-2 text-gray-300 " htmlFor="name">
-											Artist Name
+											Artist/Studio Name*
 										</label>
 										<input
 											className={`block w-full px-4 py-3 mb-2 leading-tight text-gray-800 bg-white  appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main  ${
@@ -203,7 +204,7 @@ export default function LongContactForm() {
 											className="block mb-2 text-gray-300 "
 											htmlFor="grid-password"
 										>
-											How many tracks?
+											How many tracks?*
 										</label>
 										<input
 											className={`block w-24 px-4 py-3 mb-2 leading-tight text-gray-800 bg-white appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
@@ -211,14 +212,11 @@ export default function LongContactForm() {
 											}`}
 											type="number"
 											name="trackcount"
-											id="trackcount"
-											min="1"
-											max="24"
+											defaultValue={1}
+											min={1}
+											max={24}
 											{...register("trackcount")}
 										/>
-										<div className="text-red-600">
-											{errors.trackcount?.message}
-										</div>
 									</div>
 								</motion.div>
 								<motion.div
@@ -233,7 +231,7 @@ export default function LongContactForm() {
 											Do you have a deadline?
 										</label>
 										<input
-											className={`block w-full max-w-200 px-4 h-12 mb-2 leading-tight text-gray-800 bg-white appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
+											className={`flex w-full max-w-200 text-center align-middle px-4 py-auto h-12 mb-2 leading-tight text-gray-800 bg-white appearance-none rounded-xl focus:outline-none focus:bg-white focus:border-accent-main ${
 												errors.deadline ? "is-invalid" : ""
 											}`}
 											type="date"
@@ -255,7 +253,7 @@ export default function LongContactForm() {
 											className="block mb-2 text-gray-300 "
 											htmlFor="grid-password"
 										>
-											Message (preferences, reference tracks, etc)*
+											Message (preferences, reference tracks, etc)
 										</label>
 										<textarea
 											className={`block w-full h-48 px-4 py-2 mb-2 leading-tight text-gray-800 bg-white  border-none appearance-none resize-none rounded-xl no-resize focus:outline-none focus:bg-white focus:border-accent-main focus:border-4  ${

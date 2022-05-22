@@ -168,19 +168,19 @@ export default function ContactForm() {
 							autoComplete="off"
 						/>
 						<motion.div
-							className="flex flex-col justify-between sm:flex-row"
+							className="flex flex-col justify-end sm:flex-row"
 							// variants={fadeInUp}
 						>
-							<a
+							{/* <a
 								href="https://bit.ly/3wNkrEP"
 								target="_blank"
 								className="w-full p-2 text-center align-middle transition-colors border-2 border-gray-200 rounded-lg sm:w-48 hover:bg-gray-800"
 							>
 								Upload your audio
-							</a>
+							</a> */}
 							<button
 								aria-label="Submit form"
-								className="w-full p-2 mt-8 text-center text-gray-900 align-middle transition-colors bg-white border-2 border-white rounded-lg sm:mt-0 sm:w-36 hover:bg-gray-200 hover:border-gray-200"
+								className="w-full p-2 mt-8 text-center text-gray-900 align-middle transition-colors bg-white border-2 border-white rounded-lg sm:mt-0 sm:w-48 hover:bg-gray-200 hover:border-gray-200"
 								type="submit"
 							>
 								Send
