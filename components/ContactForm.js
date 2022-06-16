@@ -91,7 +91,7 @@ export default function ContactForm() {
 
 					<form
 						className={
-							`w-full max-w-lg px-8 py-16 mx-auto transition-opacity delay-200 duration-500 md:flex-1` +
+							`w-full max-w-lg px-8 py-16 sm:pb-10 mx-auto transition-opacity delay-200 duration-500 md:flex-1` +
 							(formVisibility !== "visible" && "pointer-events-none opacity-0")
 						}
 						onSubmit={handleSubmit(onSubmit)}
