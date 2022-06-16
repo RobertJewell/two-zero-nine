@@ -35,8 +35,7 @@ export default function contact() {
 					scale="scale-150 sm:scale-100"
 					rotation="rotate-90"
 					translationX="translate-x-3/4 sm:translate-x-2/4  right-0"
-					translationY="sm:-translate-y-1/4 translate-y-1/4"
-					other=""
+					translationY="sm:-translate-y-1/4 -translate-y-1/4"
 				></Vinyl>
 
 				<PageTitle title="Booking Form" classes="max-w-5xl px-4"></PageTitle>
