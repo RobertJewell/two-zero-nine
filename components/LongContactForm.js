@@ -75,24 +75,6 @@ export default function LongContactForm() {
 
 	return (
 		<div className="container px-4 mx-auto mt-20 text-white lg:max-w-5xl mb-8">
-			<button
-				onClick={() => {
-					setFormVisibility("loading");
-					let resize = setTimeout(() => {
-						setSmallForm(true);
-					}, 1000);
-				}}
-			>
-				Set loading
-			</button>
-			<button
-				onClick={() => {
-					setFormVisibility("visible");
-					setSmallForm(false);
-				}}
-			>
-				Set visable
-			</button>
 			<motion.div
 				className={`relative flex flex-col h-auto bg-white md:flex-row rounded-2xl backdrop-blur backdrop-filter bg-opacity-10 ${
 					smallForm && "!h-96"
